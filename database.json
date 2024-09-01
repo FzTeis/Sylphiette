@@ -1,7 +1,7 @@
 {
   "users": {
     "17146121800@s.whatsapp.net": {
-      "exp": 77847,
+      "exp": 77859,
       "coin": 8160,
       "diamond": 503125,
       "bank": 143584,
@@ -441,7 +441,7 @@
       "lastppt": 1711221868358
     },
     "5212431268546@s.whatsapp.net": {
-      "exp": 82376,
+      "exp": 82512,
       "coin": 37200,
       "diamond": 4999999814002,
       "bank": 0,
@@ -1781,7 +1781,7 @@
       "commandCount": 1
     },
     "5215534215245@s.whatsapp.net": {
-      "exp": 14530,
+      "exp": 14592,
       "coin": 94,
       "diamond": 14,
       "bank": 0,
@@ -97263,10 +97263,10 @@
       "lastSuccess": 1725153008289
     },
     "owner-salvarFile.js": {
-      "total": 312,
-      "success": 311,
-      "last": 1725226141874,
-      "lastSuccess": 1725226141874
+      "total": 313,
+      "success": 312,
+      "last": 1725226590780,
+      "lastSuccess": 1725226590780
     },
     "owner-mediafire.js": {
       "total": 13,
