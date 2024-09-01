@@ -1,7 +1,7 @@
 {
   "users": {
     "17146121800@s.whatsapp.net": {
-      "exp": 77982,
+      "exp": 78018,
       "coin": 8160,
       "diamond": 503125,
       "bank": 143584,
@@ -441,7 +441,7 @@
       "lastppt": 1711221868358
     },
     "5212431268546@s.whatsapp.net": {
-      "exp": 83619,
+      "exp": 83710,
       "coin": 37200,
       "diamond": 4999999814002,
       "bank": 0,
@@ -1781,7 +1781,7 @@
       "commandCount": 1
     },
     "5215534215245@s.whatsapp.net": {
-      "exp": 15625,
+      "exp": 15664,
       "coin": 94,
       "diamond": 14,
       "bank": 0,
@@ -63763,7 +63763,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3227,
+      "exp": 3240,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -89634,7 +89634,7 @@
       "shipping": 1716335816169
     },
     "18297761616@s.whatsapp.net": {
-      "exp": 8494,
+      "exp": 8502,
       "coin": 119303,
       "diamond": 29,
       "bank": 0,
@@ -92992,7 +92992,7 @@
       "premiumTime": 0
     },
     "5214531287294@s.whatsapp.net": {
-      "exp": 40,
+      "exp": 46,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -97394,10 +97394,10 @@
       "lastSuccess": 1725153008289
     },
     "owner-salvarFile.js": {
-      "total": 316,
-      "success": 315,
-      "last": 1725232346701,
-      "lastSuccess": 1725232346701
+      "total": 317,
+      "success": 316,
+      "last": 1725232415902,
+      "lastSuccess": 1725232415902
     },
     "owner-mediafire.js": {
       "total": 13,
@@ -98468,10 +98468,10 @@
       "lastSuccess": 1725216307795
     },
     "owner-ActualizarGithub.js": {
-      "total": 12,
-      "success": 12,
-      "last": 1725232349754,
-      "lastSuccess": 1725232349754
+      "total": 13,
+      "success": 13,
+      "last": 1725232418509,
+      "lastSuccess": 1725232418509
     }
   },
   "msgs": {},
