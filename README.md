@@ -5,12 +5,6 @@
 <p align="center">
 <a href="https://github.com/FzTeis"><img title="Author" src="https://img.shields.io/badge/Sylphiette-black?style=for-the-badge&logo=whatsApp"></a>
 <p/>
-<p align="center">
-<a href="https://github.com/FzTeis?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/FzTeis?label=Followers&style=social"></a>
-<a href="https://github.com/FzTeis/Sylphiette/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/FzTeis/Sylphiette?&style=social"></a>
-<a href="https://github.com/FzTeis/Sylphiette/network/members"><img title="Fork" src="https://img.shields.io/github/forks/FzTeis/Sylphiette?style=social"></a>
-<a href="https://github.com/FzTeis/Sylphiette/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/FzTeis/Sylphiette?label=Watching&style=social"></a>
-</p>
 
 <div align="center">
 
