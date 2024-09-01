@@ -1,7 +1,7 @@
 {
   "users": {
     "17146121800@s.whatsapp.net": {
-      "exp": 77942,
+      "exp": 77982,
       "coin": 8160,
       "diamond": 503125,
       "bank": 143584,
@@ -441,7 +441,7 @@
       "lastppt": 1711221868358
     },
     "5212431268546@s.whatsapp.net": {
-      "exp": 83388,
+      "exp": 83619,
       "coin": 37200,
       "diamond": 4999999814002,
       "bank": 0,
@@ -1781,7 +1781,7 @@
       "commandCount": 1
     },
     "5215534215245@s.whatsapp.net": {
-      "exp": 15530,
+      "exp": 15625,
       "coin": 94,
       "diamond": 14,
       "bank": 0,
@@ -63763,7 +63763,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3224,
+      "exp": 3227,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -89634,7 +89634,7 @@
       "shipping": 1716335816169
     },
     "18297761616@s.whatsapp.net": {
-      "exp": 8461,
+      "exp": 8494,
       "coin": 119303,
       "diamond": 29,
       "bank": 0,
@@ -92542,7 +92542,7 @@
       "premiumTime": 0
     },
     "221337280884847@lid": {
-      "exp": 49,
+      "exp": 63,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -93915,6 +93915,98 @@
       "bank": 0,
       "lastclaim": 0,
       "registered": false,
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Novato",
+      "autolevelup": false,
+      "chatbot": false,
+      "genero": "Indeciso",
+      "language": "es",
+      "prem": false,
+      "premiumTime": 0
+    },
+    "272726379999411@lid": {
+      "exp": 9,
+      "coin": 0,
+      "diamond": 20,
+      "bank": 0,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "..",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Novato",
+      "autolevelup": false,
+      "chatbot": false,
+      "genero": "Indeciso",
+      "language": "es",
+      "prem": false,
+      "premiumTime": 0
+    },
+    "122548889067560@lid": {
+      "exp": 16,
+      "coin": 0,
+      "diamond": 20,
+      "bank": 0,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "ت︎ シ︎ 𝗜𝗮𝗻𝗕𝗼𝘁-𝗠𝗗 🌸 𝗢𝗙𝗖",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Novato",
+      "autolevelup": false,
+      "chatbot": false,
+      "genero": "Indeciso",
+      "language": "es",
+      "prem": false,
+      "premiumTime": 0
+    },
+    "250018938273871@lid": {
+      "exp": 2,
+      "coin": 0,
+      "diamond": 20,
+      "bank": 0,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "Isaac Gabriel",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Novato",
+      "autolevelup": false,
+      "chatbot": false,
+      "genero": "Indeciso",
+      "language": "es",
+      "prem": false,
+      "premiumTime": 0
+    },
+    "92058865938596@lid": {
+      "exp": 5,
+      "coin": 0,
+      "diamond": 20,
+      "bank": 0,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "𝐵𝑙𝑎𝑐𝑘𝑛𝑜𝑖𝑟 𝑇𝑒𝑟𝑐𝑒𝑟𝑜",
       "age": -1,
       "regTime": -1,
       "afk": -1,
@@ -97302,10 +97394,10 @@
       "lastSuccess": 1725153008289
     },
     "owner-salvarFile.js": {
-      "total": 314,
-      "success": 313,
-      "last": 1725227054020,
-      "lastSuccess": 1725227054020
+      "total": 316,
+      "success": 315,
+      "last": 1725232346701,
+      "lastSuccess": 1725232346701
     },
     "owner-mediafire.js": {
       "total": 13,
@@ -97380,10 +97472,10 @@
       "lastSuccess": 1723951148349
     },
     "main-menu.js": {
-      "total": 503,
-      "success": 491,
-      "last": 1725217971772,
-      "lastSuccess": 1725217971772
+      "total": 504,
+      "success": 492,
+      "last": 1725231854308,
+      "lastSuccess": 1725231854308
     },
     "owner-checkexpired.js": {
       "total": 5,
@@ -98376,10 +98468,10 @@
       "lastSuccess": 1725216307795
     },
     "owner-ActualizarGithub.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1725231627026,
-      "lastSuccess": 1725231627026
+      "total": 12,
+      "success": 12,
+      "last": 1725232349754,
+      "lastSuccess": 1725232349754
     }
   },
   "msgs": {},
