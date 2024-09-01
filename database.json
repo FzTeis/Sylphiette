@@ -1,7 +1,7 @@
 {
   "users": {
     "17146121800@s.whatsapp.net": {
-      "exp": 77859,
+      "exp": 77916,
       "coin": 8160,
       "diamond": 503125,
       "bank": 143584,
@@ -441,7 +441,7 @@
       "lastppt": 1711221868358
     },
     "5212431268546@s.whatsapp.net": {
-      "exp": 82512,
+      "exp": 83174,
       "coin": 37200,
       "diamond": 4999999814002,
       "bank": 0,
@@ -1781,7 +1781,7 @@
       "commandCount": 1
     },
     "5215534215245@s.whatsapp.net": {
-      "exp": 14592,
+      "exp": 15353,
       "coin": 94,
       "diamond": 14,
       "bank": 0,
@@ -10135,7 +10135,7 @@
       "premiumTime": 0
     },
     "5217971244760@s.whatsapp.net": {
-      "exp": 306,
+      "exp": 316,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -63763,7 +63763,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3145,
+      "exp": 3172,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -89605,7 +89605,7 @@
       "premiumTime": 0
     },
     "18494031480@s.whatsapp.net": {
-      "exp": 5660,
+      "exp": 5689,
       "coin": 228761,
       "diamond": 127,
       "bank": 0,
@@ -91240,7 +91240,7 @@
       "premiumTime": 0
     },
     "120363322716805532@g.us": {
-      "exp": 333,
+      "exp": 343,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -91334,7 +91334,7 @@
       "premiumTime": 0
     },
     "120363309522936369@g.us": {
-      "exp": 147,
+      "exp": 154,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -91357,7 +91357,7 @@
       "premiumTime": 0
     },
     "12502890430@s.whatsapp.net": {
-      "exp": 856,
+      "exp": 874,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -91721,7 +91721,7 @@
       "premiumTime": 0
     },
     "595983799436@s.whatsapp.net": {
-      "exp": 45,
+      "exp": 49,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -93888,6 +93888,28 @@
     },
     "197440149946424@lid": {
       "exp": 8,
+      "coin": 0,
+      "diamond": 20,
+      "bank": 0,
+      "lastclaim": 0,
+      "registered": false,
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Novato",
+      "autolevelup": false,
+      "chatbot": false,
+      "genero": "Indeciso",
+      "language": "es",
+      "prem": false,
+      "premiumTime": 0
+    },
+    "96319423156250@lid": {
+      "exp": 1,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -97199,6 +97221,23 @@
       "nsfw": false,
       "expired": 0,
       "rules": ""
+    },
+    "120363317355496304@g.us": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": true,
+      "antiLink": false,
+      "viewonce": false,
+      "useDocument": true,
+      "captcha": false,
+      "nsfw": false,
+      "expired": 0,
+      "rules": ""
     }
   },
   "stats": {
@@ -97263,10 +97302,10 @@
       "lastSuccess": 1725153008289
     },
     "owner-salvarFile.js": {
-      "total": 313,
-      "success": 312,
-      "last": 1725226590780,
-      "lastSuccess": 1725226590780
+      "total": 314,
+      "success": 313,
+      "last": 1725227054020,
+      "lastSuccess": 1725227054020
     },
     "owner-mediafire.js": {
       "total": 13,
@@ -97323,9 +97362,9 @@
       "lastSuccess": 1719171916758
     },
     "sticker-sticker.js": {
-      "total": 648,
+      "total": 650,
       "success": 557,
-      "last": 1725207786573,
+      "last": 1725228635445,
       "lastSuccess": 1723949182013
     },
     "econ-balance.js": {
@@ -98337,10 +98376,10 @@
       "lastSuccess": 1725216307795
     },
     "owner-ActualizarGithub.js": {
-      "total": 6,
-      "success": 6,
-      "last": 1725226423041,
-      "lastSuccess": 1725226423041
+      "total": 7,
+      "success": 7,
+      "last": 1725226866030,
+      "lastSuccess": 1725226866030
     }
   },
   "msgs": {},
