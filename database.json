@@ -1,7 +1,7 @@
 {
   "users": {
     "17146121800@s.whatsapp.net": {
-      "exp": 77916,
+      "exp": 77941,
       "coin": 8160,
       "diamond": 503125,
       "bank": 143584,
@@ -441,7 +441,7 @@
       "lastppt": 1711221868358
     },
     "5212431268546@s.whatsapp.net": {
-      "exp": 83174,
+      "exp": 83350,
       "coin": 37200,
       "diamond": 4999999814002,
       "bank": 0,
@@ -1781,7 +1781,7 @@
       "commandCount": 1
     },
     "5215534215245@s.whatsapp.net": {
-      "exp": 15353,
+      "exp": 15512,
       "coin": 94,
       "diamond": 14,
       "bank": 0,
@@ -63763,7 +63763,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3172,
+      "exp": 3212,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -89701,7 +89701,7 @@
       "rgenero": false
     },
     "18293334403@s.whatsapp.net": {
-      "exp": 13,
+      "exp": 18,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -91240,7 +91240,7 @@
       "premiumTime": 0
     },
     "120363322716805532@g.us": {
-      "exp": 343,
+      "exp": 346,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -91334,7 +91334,7 @@
       "premiumTime": 0
     },
     "120363309522936369@g.us": {
-      "exp": 154,
+      "exp": 163,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -97248,10 +97248,10 @@
       "lastSuccess": 1725157461198
     },
     "tools-hd.js": {
-      "total": 146,
-      "success": 133,
-      "last": 1725157222744,
-      "lastSuccess": 1725157222744
+      "total": 147,
+      "success": 134,
+      "last": 1725230403901,
+      "lastSuccess": 1725230403901
     },
     "owner-getfile.js": {
       "total": 192,
@@ -97800,10 +97800,10 @@
       "lastSuccess": 1725150825329
     },
     "tools-tourl.js": {
-      "total": 28,
-      "success": 18,
-      "last": 1725157244458,
-      "lastSuccess": 1725157244458
+      "total": 29,
+      "success": 19,
+      "last": 1725230429932,
+      "lastSuccess": 1725230429932
     },
     "owner-exec2.js": {
       "total": 107,
@@ -98376,10 +98376,10 @@
       "lastSuccess": 1725216307795
     },
     "owner-ActualizarGithub.js": {
-      "total": 7,
-      "success": 7,
-      "last": 1725226866030,
-      "lastSuccess": 1725226866030
+      "total": 8,
+      "success": 8,
+      "last": 1725229816088,
+      "lastSuccess": 1725229816088
     }
   },
   "msgs": {},
