@@ -1,7 +1,7 @@
 {
   "users": {
     "17146121800@s.whatsapp.net": {
-      "exp": 77836,
+      "exp": 77847,
       "coin": 8160,
       "diamond": 503125,
       "bank": 143584,
@@ -441,7 +441,7 @@
       "lastppt": 1711221868358
     },
     "5212431268546@s.whatsapp.net": {
-      "exp": 82209,
+      "exp": 82376,
       "coin": 37200,
       "diamond": 4999999814002,
       "bank": 0,
@@ -1781,7 +1781,7 @@
       "commandCount": 1
     },
     "5215534215245@s.whatsapp.net": {
-      "exp": 14441,
+      "exp": 14530,
       "coin": 94,
       "diamond": 14,
       "bank": 0,
@@ -63763,7 +63763,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3119,
+      "exp": 3145,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -91240,7 +91240,7 @@
       "premiumTime": 0
     },
     "120363322716805532@g.us": {
-      "exp": 323,
+      "exp": 333,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -93866,6 +93866,28 @@
     },
     "203143816171525@lid": {
       "exp": 9,
+      "coin": 0,
+      "diamond": 20,
+      "bank": 0,
+      "lastclaim": 0,
+      "registered": false,
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Novato",
+      "autolevelup": false,
+      "chatbot": false,
+      "genero": "Indeciso",
+      "language": "es",
+      "prem": false,
+      "premiumTime": 0
+    },
+    "197440149946424@lid": {
+      "exp": 8,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -97241,10 +97263,10 @@
       "lastSuccess": 1725153008289
     },
     "owner-salvarFile.js": {
-      "total": 311,
-      "success": 310,
-      "last": 1725225626549,
-      "lastSuccess": 1725225626549
+      "total": 312,
+      "success": 311,
+      "last": 1725226141874,
+      "lastSuccess": 1725226141874
     },
     "owner-mediafire.js": {
       "total": 13,
@@ -98315,10 +98337,10 @@
       "lastSuccess": 1725216307795
     },
     "owner-ActualizarGithub.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1725225499344,
-      "lastSuccess": 1725225499344
+      "total": 6,
+      "success": 6,
+      "last": 1725226423041,
+      "lastSuccess": 1725226423041
     }
   },
   "msgs": {},
