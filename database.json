@@ -1,7 +1,7 @@
 {
   "users": {
     "17146121800@s.whatsapp.net": {
-      "exp": 77941,
+      "exp": 77942,
       "coin": 8160,
       "diamond": 503125,
       "bank": 143584,
@@ -441,7 +441,7 @@
       "lastppt": 1711221868358
     },
     "5212431268546@s.whatsapp.net": {
-      "exp": 83350,
+      "exp": 83388,
       "coin": 37200,
       "diamond": 4999999814002,
       "bank": 0,
@@ -1781,7 +1781,7 @@
       "commandCount": 1
     },
     "5215534215245@s.whatsapp.net": {
-      "exp": 15512,
+      "exp": 15530,
       "coin": 94,
       "diamond": 14,
       "bank": 0,
@@ -63763,7 +63763,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 3212,
+      "exp": 3224,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -92992,7 +92992,7 @@
       "premiumTime": 0
     },
     "5214531287294@s.whatsapp.net": {
-      "exp": 7,
+      "exp": 40,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -98376,10 +98376,10 @@
       "lastSuccess": 1725216307795
     },
     "owner-ActualizarGithub.js": {
-      "total": 8,
-      "success": 8,
-      "last": 1725229816088,
-      "lastSuccess": 1725229816088
+      "total": 9,
+      "success": 9,
+      "last": 1725231627026,
+      "lastSuccess": 1725231627026
     }
   },
   "msgs": {},
