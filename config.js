@@ -3,6 +3,7 @@ import * as cheerio from 'cheerio'
 import { getDevice } from '@whiskeysockets/baileys'
 import yts from 'yt-search'
 //import Scraper from '@SumiFX/Scraper'
+import * as Scraper from '@kaviaann/scrape'
 import axios from 'axios'
 import chalk from 'chalk'
 import fg from 'api-dylux'
@@ -67,7 +68,7 @@ global.fg = fg
 global.path = path
 global.yts = yts
 global.fetch = fetch
-//global.Scraper = Scraper
+global.Scraper = Scraper
 global.scrapers = scrapers
 
 global.ytmp44 = ytmp44
