@@ -1,5 +1,3 @@
-
-/*
 import fs from "fs"
 let handler = async (m, { conn, usedPrefix }) => {
     
@@ -17,4 +15,3 @@ handler.command = ['getcode']
 handler.owner = true
 
 export default handler
-*/
