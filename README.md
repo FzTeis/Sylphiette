@@ -31,6 +31,7 @@
   <stron>
     <span style="color: yellow;">BOT MULTI-IDIOMA</span>
   </strong>
+
 [ 🌱 ] Multi-idioma para cada usuario, lo que significa que el usuario puede elegir el idioma que quiere usar
 </div>
 
@@ -39,8 +40,6 @@
 
 ***
 <div style="border: 2px solid black; padding: 10px; border-radius: 5px; background-color: white; color: black;"> COMANDOS DE INSTALACIÓN:
-  <pre style="margin: 0;">
-  </pre>
 </div>
 <div style="border: 2px solid black; padding: 10px; border-radius: 5px; background-color: white; color: black;">
 - TERMUX -
