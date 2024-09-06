@@ -31,10 +31,6 @@
   <stron>
     <span style="color: yellow;">BOT MULTI-IDIOMA</span>
   </strong>
-  <ul style="margin-top: 10px; padding-left: 20px; color: white;">
-- [x] Español
-- [x] Inglés
-  </ul>
 [ 🌱 ] Multi-idioma para cada usuario, lo que significa que el usuario puede elegir el idioma que quiere usar
 </div>
 
