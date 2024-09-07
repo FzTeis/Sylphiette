@@ -1,65 +1,34 @@
-
 import { canLevelUp, xpRange } from '../lib/levelling.js'
+
 let handler = async (m, { conn }) => {
-	let name = conn.getName(m.sender)
-  let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://i.ibb.co/1ZxrXKJ/avatar-contact.jpg')
     let user = global.db.data.users[m.sender]
     if (!canLevelUp(user.level, user.exp, global.multiplier)) {
         let { min, xp, max } = xpRange(user.level, global.multiplier)
-        let txt = `
-┌───⊷ *${mssg.lvl.toUpperCase()}*
-│ ${mssg.name}: *${name}*
-│ ${mssg.lvl}: *${user.level}*
-│ XP : *${user.exp - min}/${xp}*
-│ ${mssg.rank}: *${user.role}*
-└──────────────
+        throw `
+Level ${user.level} 📊
+*${user.exp - min} / ${xp}*
+\`\`\`¡¡No tienes suficiente exp para subir de nivel!!\`\`\`
 
-*${max - user.exp} XP* ${mssg.fxp}
+*Experiencia faltante: ${max - user.exp}* ! ✨
 `.trim()
-try {
-  let imgg = API('fgmods', '/api/maker/rank', {
-    username: name,
-    xp: user.exp - min,
-    exp: xp,
-    avatar: pp,
-    level: user.level,
-    ranklog: 'https://i.ibb.co/7gfnyMw/gold.png',
-    background: 'https://i.ibb.co/CsNgBYw/qiyana.jpg'
-}, 'apikey')
-
-    conn.sendFile(m.chat, imgg, 'level.jpg', txt, m)
-} catch (e) {
-    m.reply(txt)
-}
     }
-
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
-    	user.role = global.rpg.role(user.level).name
-       
+        let teks = `.             ${user.role}`
         let str = `
-┌─⊷ *LEVEL UP*
-│ ${mssg.lvlbfor}: *${before}*
-│ ${mssg.lvlup}: *${user.level}*
-│ ${mssg.rank}: *${user.role}*
-└──────────────
-`.trim()
-        
-try {
-    let img = API('fgmods', '/api/maker/levelup', { 
-      avatar: pp 
-    }, 'apikey')
-      conn.sendFile(m.chat, img, 'levelup.jpg', str, m)
-  } catch (e) {
-      m.reply(str)
-  }
-        
+\`\`\`🎉 C O N G R A T S 🎉
+
+${before} ➔ ${user.level} [ *${user.role}* ]\`\`\``.trim()
+        try {
+             conn.reply(m.chat, str, null, { quoted: fkontak })
+        } catch (e) {
+             conn.reply(m.chat, str, null, { quoted: fkontak })
+        }
     }
 }
 
 handler.help = ['levelup']
 handler.tags = ['econ']
-handler.command = ['nivel', 'lvl', 'levelup', 'level'] 
-
+handler.command = ['lvl', 'level', 'levelup']
 export default handler
