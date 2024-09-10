@@ -47,7 +47,7 @@
       "premiumTime": 0
     },
     "17146121800@s.whatsapp.net": {
-      "exp": 61092,
+      "exp": 61206,
       "coin": -2871,
       "diamond": 20,
       "bank": 0,
@@ -348,8 +348,8 @@
       "premiumTime": 0
     },
     "5212431268546@s.whatsapp.net": {
-      "exp": 1051876,
-      "coin": 4562,
+      "exp": 1052158,
+      "coin": 1731,
       "diamond": 20,
       "bank": 0,
       "lastclaim": 0,
@@ -8591,7 +8591,7 @@
       "premiumTime": 0
     },
     "593969532142@s.whatsapp.net": {
-      "exp": 6676,
+      "exp": 6696,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -8665,7 +8665,7 @@
       "weekly": 1725863558703
     },
     "5214427512331@s.whatsapp.net": {
-      "exp": 12834,
+      "exp": 13093,
       "coin": 8547,
       "diamond": 8,
       "bank": 0,
@@ -8690,7 +8690,7 @@
       "lastwork": 1725862244341
     },
     "593995969073@s.whatsapp.net": {
-      "exp": 4385,
+      "exp": 4630,
       "coin": 25844,
       "diamond": 18,
       "bank": 0,
@@ -8819,7 +8819,7 @@
       "premiumTime": 0
     },
     "5218138628988@s.whatsapp.net": {
-      "exp": 5220,
+      "exp": 5278,
       "coin": 35255,
       "diamond": 18,
       "bank": 0,
@@ -26737,22 +26737,22 @@
       "lastSuccess": 1725936213998
     },
     "main-menu.js": {
-      "total": 182,
-      "success": 182,
-      "last": 1725940687052,
-      "lastSuccess": 1725940687052
+      "total": 183,
+      "success": 183,
+      "last": 1725946332012,
+      "lastSuccess": 1725946332012
     },
     "owner-getfile.js": {
-      "total": 19,
-      "success": 19,
-      "last": 1725940483969,
-      "lastSuccess": 1725940483969
+      "total": 21,
+      "success": 21,
+      "last": 1725946477133,
+      "lastSuccess": 1725946477133
     },
     "owner-salvarFile.js": {
-      "total": 30,
-      "success": 30,
-      "last": 1725935436854,
-      "lastSuccess": 1725935436854
+      "total": 32,
+      "success": 32,
+      "last": 1725947984082,
+      "lastSuccess": 1725947984082
     },
     "rg-register.js": {
       "total": 185,
@@ -27037,10 +27037,10 @@
       "lastSuccess": 1725929671784
     },
     "owner-ActualizarGithub.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1725680604133,
-      "lastSuccess": 1725680604133
+      "total": 5,
+      "success": 5,
+      "last": 1725946324127,
+      "lastSuccess": 1725946324127
     },
     "dl-gitclone.js": {
       "total": 2,
@@ -27271,10 +27271,10 @@
       "lastSuccess": 1725430212920
     },
     "econ-mazmorra.js": {
-      "total": 21,
-      "success": 21,
-      "last": 1725946154402,
-      "lastSuccess": 1725946154402
+      "total": 22,
+      "success": 22,
+      "last": 1725946315346,
+      "lastSuccess": 1725946315346
     },
     "econ-deposit.js": {
       "total": 3,
@@ -27325,10 +27325,10 @@
       "lastSuccess": 1725909648946
     },
     "nsfw-nsfw.js": {
-      "total": 2,
-      "success": 0,
-      "last": 1725476404632,
-      "lastSuccess": 0
+      "total": 4,
+      "success": 2,
+      "last": 1725946364596,
+      "lastSuccess": 1725946364596
     },
     "fun-calc.js": {
       "total": 16,
@@ -27421,10 +27421,10 @@
       "lastSuccess": 1725920083520
     },
     "owner-update.js": {
-      "total": 3,
-      "success": 3,
-      "last": 1725929754916,
-      "lastSuccess": 1725929754916
+      "total": 8,
+      "success": 5,
+      "last": 1725947664799,
+      "lastSuccess": 1725947664799
     },
     "dl-tiktokstalk.js": {
       "total": 3,
