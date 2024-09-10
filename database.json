@@ -47,7 +47,7 @@
       "premiumTime": 0
     },
     "17146121800@s.whatsapp.net": {
-      "exp": 61206,
+      "exp": 61371,
       "coin": -2871,
       "diamond": 20,
       "bank": 0,
@@ -348,7 +348,7 @@
       "premiumTime": 0
     },
     "5212431268546@s.whatsapp.net": {
-      "exp": 1052158,
+      "exp": 1052506,
       "coin": 1731,
       "diamond": 20,
       "bank": 0,
@@ -8665,7 +8665,7 @@
       "weekly": 1725863558703
     },
     "5214427512331@s.whatsapp.net": {
-      "exp": 13093,
+      "exp": 13102,
       "coin": 8547,
       "diamond": 8,
       "bank": 0,
@@ -8690,7 +8690,7 @@
       "lastwork": 1725862244341
     },
     "593995969073@s.whatsapp.net": {
-      "exp": 4630,
+      "exp": 4649,
       "coin": 25844,
       "diamond": 18,
       "bank": 0,
@@ -26721,6 +26721,23 @@
       "nsfw": false,
       "expired": 0,
       "rules": ""
+    },
+    "120363313607456197@g.us": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": true,
+      "antiLink": false,
+      "viewonce": false,
+      "useDocument": true,
+      "captcha": false,
+      "nsfw": true,
+      "expired": 88125948490318,
+      "rules": ""
     }
   },
   "stats": {
@@ -26737,22 +26754,22 @@
       "lastSuccess": 1725936213998
     },
     "main-menu.js": {
-      "total": 183,
-      "success": 183,
-      "last": 1725946332012,
-      "lastSuccess": 1725946332012
+      "total": 184,
+      "success": 184,
+      "last": 1725948590571,
+      "lastSuccess": 1725948590571
     },
     "owner-getfile.js": {
-      "total": 21,
-      "success": 21,
-      "last": 1725946477133,
-      "lastSuccess": 1725946477133
+      "total": 22,
+      "success": 22,
+      "last": 1725948194074,
+      "lastSuccess": 1725948194074
     },
     "owner-salvarFile.js": {
-      "total": 32,
-      "success": 32,
-      "last": 1725947984082,
-      "lastSuccess": 1725947984082
+      "total": 33,
+      "success": 33,
+      "last": 1725948335695,
+      "lastSuccess": 1725948335695
     },
     "rg-register.js": {
       "total": 185,
@@ -26779,10 +26796,10 @@
       "lastSuccess": 1725845534280
     },
     "enable.js": {
-      "total": 44,
-      "success": 25,
-      "last": 1725935255128,
-      "lastSuccess": 1725932742234
+      "total": 45,
+      "success": 26,
+      "last": 1725948496459,
+      "lastSuccess": 1725948496459
     },
     "tools-fetch.js": {
       "total": 38,
@@ -26917,10 +26934,10 @@
       "lastSuccess": 1725933018230
     },
     "anime-waifupics.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1725863610323,
-      "lastSuccess": 1725863610323
+      "total": 6,
+      "success": 6,
+      "last": 1725948566849,
+      "lastSuccess": 1725948566849
     },
     "img-gimage.js": {
       "total": 7,
@@ -27007,10 +27024,10 @@
       "lastSuccess": 1725583983245
     },
     "nsfw-nime.js": {
-      "total": 7,
-      "success": 2,
-      "last": 1725769001151,
-      "lastSuccess": 1725358709860
+      "total": 9,
+      "success": 4,
+      "last": 1725948580643,
+      "lastSuccess": 1725948580643
     },
     "game-slot.js": {
       "total": 5,
@@ -27037,10 +27054,10 @@
       "lastSuccess": 1725929671784
     },
     "owner-ActualizarGithub.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1725946324127,
-      "lastSuccess": 1725946324127
+      "total": 7,
+      "success": 7,
+      "last": 1725948412335,
+      "lastSuccess": 1725948412335
     },
     "dl-gitclone.js": {
       "total": 2,
@@ -27325,10 +27342,10 @@
       "lastSuccess": 1725909648946
     },
     "nsfw-nsfw.js": {
-      "total": 4,
-      "success": 2,
-      "last": 1725946364596,
-      "lastSuccess": 1725946364596
+      "total": 8,
+      "success": 5,
+      "last": 1725948505959,
+      "lastSuccess": 1725948505959
     },
     "fun-calc.js": {
       "total": 16,
@@ -27421,9 +27438,9 @@
       "lastSuccess": 1725920083520
     },
     "owner-update.js": {
-      "total": 8,
+      "total": 9,
       "success": 5,
-      "last": 1725947664799,
+      "last": 1725947990211,
       "lastSuccess": 1725947664799
     },
     "dl-tiktokstalk.js": {
@@ -27437,6 +27454,12 @@
       "success": 15,
       "last": 1725936390575,
       "lastSuccess": 1725936390575
+    },
+    "owner-getFiless.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1725948599003,
+      "lastSuccess": 1725948599003
     }
   },
   "msgs": {},
