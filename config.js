@@ -1,5 +1,5 @@
 import { watchFile, unwatchFile } from 'fs'
-import * as cheerio from 'cheerio'
+//import * as cheerio from 'cheerio'
 import { getDevice } from '@whiskeysockets/baileys'
 import yts from 'yt-search'
 //import Scraper from '@SumiFX/Scraper'
@@ -64,7 +64,7 @@ global.link_ = 'https://chat.whatsapp.com/CN3YieShy2S3LnVRJ7aPPm'
 global.getDevice = getDevice
 global.axios = axios 
 global.fs = fs
-global.cheerio = cheerio
+//global.cheerio = cheerio
 global.fg = fg
 global.path = path
 global.yts = yts
