@@ -11,6 +11,7 @@ import fs from 'fs'
 import yt from 'ytdl-core'
 import ytdl from 'ytdl-core'
 import fetch from 'node-fetch'
+import * as fileType from 'file-type'
 import { fileURLToPath } from 'url'
 import path, { join } from 'path'
 import * as scrapers from '@bochilteam/scraper'
@@ -68,6 +69,8 @@ global.fg = fg
 global.path = path
 global.yts = yts
 global.fetch = fetch
+global.fileType = fileType
+//global.fromBuffer = fromBuffer
 global.Scraper = Scraper
 global.scrapers = scrapers
 
