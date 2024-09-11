@@ -47,7 +47,7 @@
       "premiumTime": 0
     },
     "17146121800@s.whatsapp.net": {
-      "exp": 62819,
+      "exp": 63066,
       "coin": -2871,
       "diamond": 20,
       "bank": 0,
@@ -348,7 +348,7 @@
       "premiumTime": 0
     },
     "5212431268546@s.whatsapp.net": {
-      "exp": 1055259,
+      "exp": 1055563,
       "coin": 11786,
       "diamond": 20,
       "bank": 0,
@@ -1454,7 +1454,7 @@
       "premiumTime": 0
     },
     "50242783087@s.whatsapp.net": {
-      "exp": 831,
+      "exp": 841,
       "coin": 8400,
       "diamond": 20,
       "bank": 0,
@@ -1662,7 +1662,7 @@
       "lastwork": 1725929403353
     },
     "12502890430@s.whatsapp.net": {
-      "exp": 1793,
+      "exp": 1982,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -2705,7 +2705,7 @@
       "premiumTime": 0
     },
     "5492266613038@s.whatsapp.net": {
-      "exp": 71,
+      "exp": 109,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -2939,15 +2939,15 @@
       "premiumTime": 0
     },
     "5215534215245@s.whatsapp.net": {
-      "exp": 3022,
-      "coin": 0,
+      "exp": 3476,
+      "coin": 8400,
       "diamond": 20,
       "bank": 0,
       "lastclaim": 0,
-      "registered": false,
-      "name": "ඞ 𝐿.𝐴𝑛 ༆",
-      "age": -1,
-      "regTime": -1,
+      "registered": true,
+      "name": "pene",
+      "age": 18,
+      "regTime": 1726094889929,
       "afk": -1,
       "afkReason": "",
       "banned": false,
@@ -2956,7 +2956,7 @@
       "role": "Novato",
       "autolevelup": false,
       "chatbot": false,
-      "genero": "Indeciso",
+      "genero": "🙆🏻‍♂️ Hombre",
       "language": "es",
       "prem": false,
       "premiumTime": 0
@@ -8690,7 +8690,7 @@
       "lastwork": 1725862244341
     },
     "593995969073@s.whatsapp.net": {
-      "exp": 4676,
+      "exp": 4681,
       "coin": 25844,
       "diamond": 18,
       "bank": 0,
@@ -18387,7 +18387,7 @@
       "premiumTime": 0
     },
     "149340727291951@lid": {
-      "exp": 5,
+      "exp": 12,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -28884,6 +28884,98 @@
       "language": "es",
       "prem": false,
       "premiumTime": 0
+    },
+    "270939438723165@lid": {
+      "exp": 48,
+      "coin": 0,
+      "diamond": 20,
+      "bank": 0,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "Zon🇦🇱",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Novato",
+      "autolevelup": false,
+      "chatbot": false,
+      "genero": "Indeciso",
+      "language": "es",
+      "prem": false,
+      "premiumTime": 0
+    },
+    "35060220747880@lid": {
+      "exp": 21,
+      "coin": 0,
+      "diamond": 20,
+      "bank": 0,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "Marito 😛",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Novato",
+      "autolevelup": false,
+      "chatbot": false,
+      "genero": "Indeciso",
+      "language": "es",
+      "prem": false,
+      "premiumTime": 0
+    },
+    "51906662557@s.whatsapp.net": {
+      "exp": 88,
+      "coin": 8400,
+      "diamond": 20,
+      "bank": 0,
+      "lastclaim": 0,
+      "registered": true,
+      "name": "Katashi",
+      "age": 22,
+      "regTime": 1726094602959,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Novato",
+      "autolevelup": false,
+      "chatbot": false,
+      "genero": "🙆🏻‍♂️ Hombre",
+      "language": "es",
+      "prem": false,
+      "premiumTime": 0
+    },
+    "16857830547470@lid": {
+      "exp": 3,
+      "coin": 0,
+      "diamond": 20,
+      "bank": 0,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "Ellcache",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Novato",
+      "autolevelup": false,
+      "chatbot": false,
+      "genero": "Indeciso",
+      "language": "es",
+      "prem": false,
+      "premiumTime": 0
     }
   },
   "chats": {
@@ -31810,6 +31902,23 @@
       "nsfw": false,
       "expired": 0,
       "rules": ""
+    },
+    "51906662557@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": true,
+      "antiLink": false,
+      "viewonce": false,
+      "useDocument": true,
+      "captcha": false,
+      "nsfw": false,
+      "expired": 0,
+      "rules": ""
     }
   },
   "stats": {
@@ -31820,22 +31929,22 @@
       "lastSuccess": 1725671846898
     },
     "dl-play.js": {
-      "total": 532,
-      "success": 441,
-      "last": 1726017632848,
-      "lastSuccess": 1726017632848
+      "total": 534,
+      "success": 442,
+      "last": 1726094473422,
+      "lastSuccess": 1726094473422
     },
     "main-menu.js": {
-      "total": 223,
-      "success": 223,
-      "last": 1726017545479,
-      "lastSuccess": 1726017545479
+      "total": 228,
+      "success": 228,
+      "last": 1726094898104,
+      "lastSuccess": 1726094898104
     },
     "owner-getfile.js": {
-      "total": 26,
-      "success": 26,
-      "last": 1725999171764,
-      "lastSuccess": 1725999171764
+      "total": 28,
+      "success": 28,
+      "last": 1726095141235,
+      "lastSuccess": 1726095141235
     },
     "owner-salvarFile.js": {
       "total": 46,
@@ -31844,10 +31953,10 @@
       "lastSuccess": 1725998857957
     },
     "rg-register.js": {
-      "total": 227,
-      "success": 69,
-      "last": 1726016920376,
-      "lastSuccess": 1726016920376
+      "total": 231,
+      "success": 71,
+      "last": 1726094889939,
+      "lastSuccess": 1726094889939
     },
     "dl-mediafire.js": {
       "total": 55,
@@ -32042,10 +32151,10 @@
       "lastSuccess": 1725943426461
     },
     "main-ping.js": {
-      "total": 39,
-      "success": 39,
-      "last": 1726004828032,
-      "lastSuccess": 1726004828032
+      "total": 43,
+      "success": 43,
+      "last": 1726094846845,
+      "lastSuccess": 1726094846845
     },
     "tools-google.js": {
       "total": 5,
@@ -32066,15 +32175,15 @@
       "lastSuccess": 1725835001969
     },
     "main-speedtest.js": {
-      "total": 19,
-      "success": 19,
-      "last": 1726012894763,
-      "lastSuccess": 1726012894763
+      "total": 21,
+      "success": 21,
+      "last": 1726094376891,
+      "lastSuccess": 1726094376891
     },
     "tools-openai.js": {
-      "total": 59,
+      "total": 60,
       "success": 21,
-      "last": 1726017661874,
+      "last": 1726094317952,
       "lastSuccess": 1726017661874
     },
     "econ-leaderboard.js": {
@@ -32192,9 +32301,9 @@
       "lastSuccess": 1725663307416
     },
     "tools-whatmusic.js": {
-      "total": 16,
+      "total": 18,
       "success": 4,
-      "last": 1725696760293,
+      "last": 1726095030178,
       "lastSuccess": 1725696760293
     },
     "fun-simsimi.js": {
@@ -32216,10 +32325,10 @@
       "lastSuccess": 1725409282026
     },
     "owner-deleteFile.js": {
-      "total": 8,
-      "success": 8,
-      "last": 1726017510404,
-      "lastSuccess": 1726017510404
+      "total": 9,
+      "success": 9,
+      "last": 1726095108667,
+      "lastSuccess": 1726095108667
     },
     "bebot-getcode.js": {
       "total": 5,
