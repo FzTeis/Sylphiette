@@ -25,7 +25,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     
     conn.sendMessage(m.chat, { 
         [type]: { url: res.resultados.descargar }, 
-        gifPlayback: true, 
+        gifPlayback: false, 
         mimetype: isVideo ? "video/mp4" : "audio/mpeg" 
     }, { quoted: m });
 }
