@@ -1,47 +1,52 @@
-import axios from 'axios';
-import FormData from 'form-data';
-import fs from 'fs';
-import os from 'os';
-import path from 'path';
+import fs from "fs"
+import fetch from "node-fetch"
+import FormData from "form-data"
 
-let handler = async (m, { args, command, usedPrefix }) => {
-  let q = m.quoted ? m.quoted : m;
-  let mime = (q.msg || q).mimetype || '';
-  if (!mime) throw `✳️ ${mssg.replyImg}`;
- // if (!args[0]) throw ` \`\`\`[ 🌺 ] Ingresa un texto para guardar la imagen. Ejemplo:\n${usedPrefix + command} Sylph\`\`\``
-
-  let media = await q.download();
-  let tempFilePath = path.join(os.tmpdir(), 'Sylph');
-  fs.writeFileSync(tempFilePath, media);
-
-  let form = new FormData();
-  form.append('image', fs.createReadStream(tempFilePath));
-
+let handler = async m => {
   try {
-    let response = await axios.post('https://api.imgbb.com/1/upload?key=1f55ea75f24df783643940f3eacbbc96', form, {
-      headers: {
-        ...form.getHeaders()
-      }
-    });
-
-    if (!response.data || !response.data.data || !response.data.data.url) throw '❌ Error al subir el archivo';
-    
-    let link = response.data.data.url;
-    fs.unlinkSync(tempFilePath);
-
-    m.reply(`❖ ${media.length} Byte(s)
-
-❖ (Archivo subido a ImgBB)
-❖ *URL:* ${link}
-    `);
-  } catch (error) {
-    console.error('Error al subir el archivo:', error.message);
-    throw '❌ Error al subir el archivo a ImgBB';
+    const q = m.quoted || m
+    const mime = q.mediaType || ""    
+    if (!/image|video|audio|sticker|document/.test(mime)) 
+      throw "```[ 📤 ] Responde a una imagen / vídeo / audio ( normal o documento )```"
+    const media = await q.download(true)
+    const fileSizeInBytes = fs.statSync(media).size    
+    if (fileSizeInBytes === 0) {
+      await m.reply("```[ ❗ ] El archivo es demasiado ligero```")
+      await fs.promises.unlink(media)
+      return
+    }   
+    if (fileSizeInBytes > 1073741824) {
+      await m.reply("```[ 🌴 ] El archivo supera 1GB```")
+      await fs.promises.unlink(media)
+      return
+    }    
+    const { files } = await uploadUguu(media)
+    const caption = `\`\`\`[ 🍄 ] Aquí tienes la URL de tu archivo:\n${files[0]?.url}\`\`\``
+    await m.reply(caption)
+  } catch (e) {
+    await m.reply(`${e}`)
   }
 }
 
-handler.help = ['tourl'];
-handler.tags = ['tools'];
-handler.command = ['upload', 'tourl'];
+handler.help = ["tourl2", "tourl"]
+handler.tags = ["tools"]
+handler.command = /^(tourl2|tourl)$/i
+export default handler
 
-export default handler;
+async function uploadUguu(path) {
+  try {
+    const form = new FormData()
+    form.append("files[]", fs.createReadStream(path))   
+    const res = await fetch("https://uguu.se/upload.php", {
+      method: "POST",
+      headers: form.getHeaders(),
+      body: form
+    })    
+    const json = await res.json()
+    await fs.promises.unlink(path)   
+    return json
+  } catch (e) {
+    await fs.promises.unlink(path)
+    throw "Upload failed"
+  }
+}
