@@ -41,6 +41,22 @@ app.listen(port, () => {
 
 var isRunning = false
 
+// Función para verificar la carpeta tmp
+async function ensureTmpFolder() {
+  const tmpDir = path.join(__dirname, 'tmp');
+  try {
+    const folderExists = await fsPromises.access(tmpDir).then(() => true).catch(() => false);
+    if (!folderExists) {
+      await fsPromises.mkdir(tmpDir);
+      console.log('La carpeta "tmp" ha sido creada con éxito.');
+    } else {
+      console.log('La carpeta "tmp" ya existe.');
+    }
+  } catch (error) {
+    console.error('Ocurrió un error al verificar o crear la carpeta "tmp":', error);
+  }
+}
+
 async function start(file) {
   if (isRunning) return
   isRunning = true
@@ -51,6 +67,10 @@ async function start(file) {
     align: 'center',
     gradient: ['red', 'magenta']
   })
+
+  // Verificación de la carpeta tmp
+  await ensureTmpFolder();
+
   setupMaster({
     exec: args[0],
     args: args.slice(1),
@@ -91,7 +111,7 @@ async function start(file) {
   console.log(chalk.yellow(`📃 TxKrull.fcv`));
 
   const packageJsonPath = path.join(path.dirname(currentFilePath), './package.json');
-    try {
+  try {
     const packageJsonData = await fsPromises.readFile(packageJsonPath, 'utf-8');
     const packageJsonObj = JSON.parse(packageJsonData);
     console.log(chalk.blue.bold(`\n📦 Información del Paquete`));
@@ -103,15 +123,11 @@ async function start(file) {
     console.error(chalk.red(`❌ No se pudo leer el archivo package.json: ${err}`));
   }
 
-
   console.log(chalk.blue.bold(`\n⏰ Hora Actual`));
-  const currentTime = new Date().toLocaleString('es-ES', { timeZone: 'America/Argentina/Buenos_Aires' })
-  //const currentTime = new Date().toLocaleString();
+  const currentTime = new Date().toLocaleString('es-ES', { timeZone: 'America/Argentina/Buenos_Aires' });
   console.log(chalk.cyan(`${currentTime}`));
 
   setInterval(() => {}, 1000);
-
-  
 
   //----
   let opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
