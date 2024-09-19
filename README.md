@@ -45,7 +45,7 @@ $ npm start
 1. Esperar a que se inicie el bot...
 2. Elige una de las opciones para establecer la conexión.
 3. Escanea el código QR u introduce el codigo de 8 digitos desde el segundo dispositivo. (ir a whatsapp > Dispositivos Vinculados > Vincular un dispositivo)
----------
+
 ### **`TK HOST 📲`**
 <a href="https://dash.tk-joanhost.com"><img src="https://i.ibb.co/pr8TnWJ/SAVE-20240915-183758.jpg" height="125px"></a>
 
