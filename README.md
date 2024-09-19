@@ -46,6 +46,19 @@ $ npm start
 2. Elige una de las opciones para establecer la conexión.
 3. Escanea el código QR u introduce el codigo de 8 digitos desde el segundo dispositivo. (ir a whatsapp > Dispositivos Vinculados > Vincular un dispositivo)
 ---------
+### **`TK HOST 📲`**
+<a href="https://dash.tk-joanhost.com"><img src="https://i.ibb.co/pr8TnWJ/SAVE-20240915-183758.jpg" height="125px"></a>
+
+<details>
+ <summary><b>:paperclip: Enlaces Importantes</b></summary>
+
+- **Dashboard:** [`Aquí`](https://dash.tk-joanhost.com)
+- **Panel:** [`Aquí`](https://panel.tk-joanhost.com)
+- **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029VaoZXbk6RGJNYQVP8r27)
+- **Usa mi código de referencia:** [8DSQVA9e]
+
+</details>
+---------
 ### 🌟 AGRADECIMIENTOS
 [![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=60)](https://github.com/BrunoSobrino)
 [![FG98F](https://github.com/FG98F.png?size=60)](https://github.com/FG98F) 
