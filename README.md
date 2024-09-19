@@ -37,8 +37,7 @@
 - **Dashboard:** [`Aquí`](https://dash.tk-joanhost.com)
 - **Panel:** [`Aquí`](https://panel.tk-joanhost.com)
 - **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029VaoZXbk6RGJNYQVP8r27)
-- **Usa mi código de referencia:** [8DSQVA9e]
-
+- **Registrarse:** [`Aquí`](https://dash.tk-joanhost.com/register?ref=8DSQVA9e)
 </details>
 
 ### TERMUX
