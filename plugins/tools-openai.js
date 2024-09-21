@@ -1,7 +1,7 @@
 let handler = async (m, { text, usedPrefix, command }) => {
   if (!text) throw `Ingresa un texto`;
 
-const syms1 = `Actuaras como un Bot de WhatsApp el cual fue creado por Fz, tu seras Sylphiette. Responde con un tono burlón/amable/timido`
+const syms1 = `Actuaras como un Bot de WhatsApp el cual fue creado por Fz, tu seras Sylphiette. Responde con un tono amable / inteligente y responde correctamente a lo que te pidan añadiendo una pequeña nota usando: ## Nota: < Nota que darás >. La nota será en el contexto de lo que te pidan.`
 let nombre = global.db.data.users[m.sender].name
 let a = await fetch(`https://api.cafirexos.com/api/chatgpt?text=${text}&name=${nombre}&prompt=${syms1}`)
 let res = await a.json()
