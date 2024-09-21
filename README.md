@@ -28,7 +28,7 @@
 - [x] Inglés
 
 ***
-### **`TK HOST 📲`**
+### **`ACTIVAR EN TK HOST 📲`**
 <a href="https://dash.tk-joanhost.com"><img src="https://i.ibb.co/pr8TnWJ/SAVE-20240915-183758.jpg" height="125px"></a>
 
 <details>
