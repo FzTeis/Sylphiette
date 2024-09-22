@@ -1,1 +1,0 @@
-worker: sh iniciar.sh
