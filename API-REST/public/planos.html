@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[+] I'm Fz | Planos [+]</title>
+
+<style>
+<!-- ====================GERAL============================== -->
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: hsl(33, 100%, 50%);
+  --headline: hsl(210, 11%, 15%);
+  --paragraph: hsl(210, 9%, 31%);
+  --brand-beige: hsl(39, 100%, 97%);
+  --brand-light: hsl(148, 23%, 89%);
+  --bg-light: hsl(180, 14%, 97%);
+  font-size: 62.5%;  /* 1rem = 10px */
+  --nav-height: 7.2rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: 'DM Sans';
+  font-size: 1.6rem;
+  text-align: center;
+  overflow: overlay;
+  background-color: hsl(0, 0%, 11%);
+}
+.wrapper {
+  width: 37.5rem;
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+ul {
+  list-style: none;
+}
+section {
+  padding-block: 10rem;
+}
+/* ==============================HOME============================== */
+#home {
+  padding-top: calc(4.1rem + var(--nav-height));
+}
+#home::before {
+  content: '';
+  width: 100%;
+  height: calc(108rem + var(--nav-height));
+  background-color: var(--brand-light);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#home h4 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 1.6rem;
+}
+#home h1 {
+  font-size: 3.4rem;
+  color: var(--headline);
+  line-height: 130%;
+  margin-bottom: 2.4rem;
+}
+#home p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--paragraph);
+  margin-bottom: 3.2rem;
+}
+#home button {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 4rem;
+  margin-bottom: 6rem;
+  height: 6.2rem;
+  width: 26.3rem;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+#home img {
+  width: 26.4rem;
+  display: block;
+  margin-inline: auto;
+  object-position: 0 2rem;
+}
+#home .stats {
+  width: 32.7rem;
+  padding-block: 4rem;
+  margin-inline: auto;
+  background-color: var(--brand-beige);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+  border: 1px solid var(--brand-light);
+  border-radius: .6rem;
+}
+#home .stat h3 {
+  font-size: 4.8rem;
+  color: var(--headline);
+  line-height: 130%;
+  margin-bottom: .4rem;
+}
+#home .stat p {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+/* ==============================NAVIGATION============================== */
+nav {
+  display: flex;
+  padding: 1.6rem 2.4rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: var(--nav-height);
+}
+nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav.scroll {
+  background: var(--primary-color);
+  width: 100vw;
+}
+nav.scroll svg:nth-child(1) path {
+  fill: hsl(0, 0%, 100%);
+}
+nav.scroll button path {
+  stroke: hsl(0, 0%, 100%);
+}
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/* ==============================MENU-EXPANDED============================== */
+body.menu-expanded {
+  overflow: hidden;
+}
+body.menu-expanded > :not(nav) {
+  display: none;
+}
+.menu, 
+.close-menu,
+body.menu-expanded .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+body.menu-expanded .menu, 
+body.menu-expanded .close-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.menu {
+  transform: translateY(-100%);
+}
+body.menu-expanded .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--primary-color);
+  width: 100vw;
+  height: 100vh;
+  padding-top: var(--nav-height);
+  transition: transform 700ms;
+  transform: translateY(0);
+}
+body.menu-expanded nav {
+  position: relative;
+}
+.menu ul:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  margin-top: 6rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+.menu ul li a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+.menu .button {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 4rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primary-color);
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  margin-top: 4.8rem;
+  margin-bottom: 8rem;
+} 
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+body.menu-expanded .logo,
+body.menu-expanded button {
+  position: relative;
+  z-index: 10;
+}
+body.menu-expanded .logo path {
+  fill: hsl(0, 0%, 100%);
+}
+body.menu-expanded button path {
+  stroke: hsl(0, 0%, 100%);
+}
+/* ==============================SERVICES============================== */
+#services header h4 {
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  color: var(--brand-light);
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+#services header h5 {
+  letter-spacing: 0.08rem;
+  color: green;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+#services header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+  color: var(--primary-color);
+  margin-bottom: 6rem;
+}
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+#services .card {
+  padding: 2.4rem;
+  text-align: left;
+  background: hsl(0, 0%, 100%);
+  border: .1rem solid var(--brand-light);
+  border-radius: .6rem;
+}
+.card h3 {
+  margin-block: 1.6rem;
+}
+.card span {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 1.6rem;
+}
+.meses {
+  color: var(--paragraph);
+  display: inline;
+}
+ul {
+  margin-bottom: 2rem
+}
+.btn {
+  text-decoration: none;
+  background: var(--primary-color);
+  padding: 0.8rem;
+  border-radius: 8px;
+  color: var(--headline);
+  font-weight: 700
+}
+</style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body onscroll="onScroll()" class="">
+<section id="services">
+<div class="wrapper">
+<header>
+
+<h2>PLANOS DE APIKEYS</h2>
+
+<h4>Todos os planos estabelecidos incluem ApiKeys com validade de 00 dias, além de um limite de requests.</h4>
+<h4>Ofereço suporte a erros adquiridos por meio de minhas apis e criação de cases em todos os planos, mas o suporte avançado é no plano Diamond.</h4>
+<h5>Formas de pagamento: Pix & Picpay.</h5>
+</header>
+
+<div class="card">
+
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#DCE9E2" /><path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+
+<h3>PLANO - SILVER</h3>
+
+<div class="meses">
+<span>15 R$</span>
+<p class="meses">/Por tiempo indeterminado.</p>
+</div>
+
+<ul class="list-unstyled ul-check success mb-5">
+
+<li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="ic:baseline-verified" style="color: lime;"><path fill="currentColor" d="m23 12l-2.44-2.79l.34-3.69l-3.61-.82l-1.89-3.2L12 2.96L8.6 1.5L6.71 4.69L3.1 5.5l.34 3.7L1 12l2.44 2.79l-.34 3.7l3.61.82L8.6 22.5l3.4-1.47l3.4 1.46l1.89-3.19l3.61-.82l-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81l1.48-1.48l2.32 2.33l5.85-5.87l1.48 1.48l-7.33 7.35z"></path>
+</svg>ApiKey con "10.000" requests.</li>
+
+<li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="ic:baseline-verified" style="color: lime;"><path fill="currentColor" d="m23 12l-2.44-2.79l.34-3.69l-3.61-.82l-1.89-3.2L12 2.96L8.6 1.5L6.71 4.69L3.1 5.5l.34 3.7L1 12l2.44 2.79l-.34 3.7l3.61.82L8.6 22.5l3.4-1.47l3.4 1.46l1.89-3.19l3.61-.82l-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81l1.48-1.48l2.32 2.33l5.85-5.87l1.48 1.48l-7.33 7.35z"></path>
+</svg>ApiKey aleatoria.</li>
+
+<li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--carbon" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" data-icon="carbon:close-outline" style="color: red;"><path fill="currentColor"d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2zm0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12z"></path><path fill="currentColor" d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z"></path></svg>Suporte al utilizar la API.</li>
+</ul>
+
+<p class="text-center"><a href="https://api.whatsapp.com/send?phone=522431268546&amp;text=Olá! Desejo comprar o plano: SILVER" class="btn">Comprar</a></p>
+</div>
+
+<br>
+
+<div class="card">
+
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#DCE9E2" /><path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+
+<h3>PLANO - GOLD</h3>
+
+<div class="meses">
+<span>20 R$</span>
+<p class="meses">/Por tempo indeterminado.</p>
+</div>
+
+<ul class="list-unstyled ul-check success mb-5">
+
+<li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="ic:baseline-verified" style="color: lime;"><path fill="currentColor" d="m23 12l-2.44-2.79l.34-3.69l-3.61-.82l-1.89-3.2L12 2.96L8.6 1.5L6.71 4.69L3.1 5.5l.34 3.7L1 12l2.44 2.79l-.34 3.7l3.61.82L8.6 22.5l3.4-1.47l3.4 1.46l1.89-3.19l3.61-.82l-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81l1.48-1.48l2.32 2.33l5.85-5.87l1.48 1.48l-7.33 7.35z"></path>
+</svg>ApiKey limitada a "20.000" requests.</li>
+
+<li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="ic:baseline-verified" style="color: lime;"><path fill="currentColor" d="m23 12l-2.44-2.79l.34-3.69l-3.61-.82l-1.89-3.2L12 2.96L8.6 1.5L6.71 4.69L3.1 5.5l.34 3.7L1 12l2.44 2.79l-.34 3.7l3.61.82L8.6 22.5l3.4-1.47l3.4 1.46l1.89-3.19l3.61-.82l-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81l1.48-1.48l2.32 2.33l5.85-5.87l1.48 1.48l-7.33 7.35z"></path>
+</svg>ApiKey aleatória.</li>
+
+<li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--carbon" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" data-icon="carbon:close-outline" style="color: red;"><path fill="currentColor"d="M16 2C8.2 2 2 8.2 2 16s6.2 14 14 14s14-6.2 14-14S23.8 2 16 2zm0 26C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12s-5.4 12-12 12z"></path><path fill="currentColor" d="M21.4 23L16 17.6L10.6 23L9 21.4l5.4-5.4L9 10.6L10.6 9l5.4 5.4L21.4 9l1.6 1.6l-5.4 5.4l5.4 5.4z"></path></svg>Suporte na utilização da API.</li>
+</ul>
+
+<p class="text-center"><a href="https://api.whatsapp.com/send?phone=522431268546&amp;text=Olá! Desejo comprar o plano: GOLD" class="btn">Comprar</a></p>
+</div>
+
+<br>
+
+<div class="card">
+
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#DCE9E2" /><path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+
+<h3>PLANO - DIAMOND</h3>
+
+<div class="meses">
+<span>35 R$</span>
+<p class="meses">/Por tempo identificado.</p>
+</div>
+
+<ul class="list-unstyled ul-check success mb-5">
+
+<li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="ic:baseline-verified" style="color: lime;"><path fill="currentColor" d="m23 12l-2.44-2.79l.34-3.69l-3.61-.82l-1.89-3.2L12 2.96L8.6 1.5L6.71 4.69L3.1 5.5l.34 3.7L1 12l2.44 2.79l-.34 3.7l3.61.82L8.6 22.5l3.4-1.47l3.4 1.46l1.89-3.19l3.61-.82l-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81l1.48-1.48l2.32 2.33l5.85-5.87l1.48 1.48l-7.33 7.35z"></path>
+</svg>ApiKey com requests ilimitado.</li>
+ 
+<li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="ic:baseline-verified" style="color: lime;"><path fill="currentColor" d="m23 12l-2.44-2.79l.34-3.69l-3.61-.82l-1.89-3.2L12 2.96L8.6 1.5L6.71 4.69L3.1 5.5l.34 3.7L1 12l2.44 2.79l-.34 3.7l3.61.82L8.6 22.5l3.4-1.47l3.4 1.46l1.89-3.19l3.61-.82l-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81l1.48-1.48l2.32 2.33l5.85-5.87l1.48 1.48l-7.33 7.35z"></path>
+</svg>ApiKey personalizada.</li>
+
+<li><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="ic:baseline-verified" style="color: lime;"><path fill="currentColor" d="m23 12l-2.44-2.79l.34-3.69l-3.61-.82l-1.89-3.2L12 2.96L8.6 1.5L6.71 4.69L3.1 5.5l.34 3.7L1 12l2.44 2.79l-.34 3.7l3.61.82L8.6 22.5l3.4-1.47l3.4 1.46l1.89-3.19l3.61-.82l-.34-3.69L23 12zm-12.91 4.72l-3.8-3.81l1.48-1.48l2.32 2.33l5.85-5.87l1.48 1.48l-7.33 7.35z"></path></svg>Suporte na utilização. ( 24horas )</li>
+</ul>
+
+</ul>
+
+<p class="text-center"><a href="https://api.whatsapp.com/send?phone=522431268546&amp;text=Olá! Desejo comprar o plano: DIAMOND" class="btn">Comprar</a></p>
+</div>
+</div>
+</div>
+
+</section>
+
+</body>
+
+</html>
