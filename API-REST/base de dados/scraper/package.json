@@ -1,0 +1,16 @@
+{
+  "name": "scraper",
+  "version": "2.5.0",
+  "description": "Scrapers basicos de alguns sites",
+  "main": "scraper.js",
+  "author": "Star Apis",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.1.3",
+    "cheerio": "^1.0.0-rc.12",
+    "encodeurl": "^1.0.2",
+    "fs-extra": "^10.1.0",
+    "linkifyjs": "^4.0.2",
+    "qs": "^6.11.0"
+  }
+}
