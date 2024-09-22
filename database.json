@@ -47,7 +47,7 @@
       "premiumTime": 0
     },
     "17146121800@s.whatsapp.net": {
-      "exp": 93720,
+      "exp": 93738,
       "coin": -2871,
       "diamond": 20,
       "bank": 0,
@@ -257,7 +257,7 @@
       "premiumTime": 0
     },
     "132710697808100@lid": {
-      "exp": 231,
+      "exp": 237,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -348,7 +348,7 @@
       "premiumTime": 0
     },
     "5212431268546@s.whatsapp.net": {
-      "exp": 1272197,
+      "exp": 1272253,
       "coin": 8472,
       "diamond": 20,
       "bank": 0,
@@ -439,7 +439,7 @@
       "premiumTime": 0
     },
     "120363322716805532@g.us": {
-      "exp": 2742,
+      "exp": 2745,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -1010,7 +1010,7 @@
       "premiumTime": 0
     },
     "5217551041477@s.whatsapp.net": {
-      "exp": 8922,
+      "exp": 8944,
       "coin": 247,
       "diamond": 285,
       "bank": 0,
@@ -1669,7 +1669,7 @@
       "weekly": 1726472486951
     },
     "12502890430@s.whatsapp.net": {
-      "exp": 2587,
+      "exp": 2589,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -8674,7 +8674,7 @@
       "weekly": 1725863558703
     },
     "5214427512331@s.whatsapp.net": {
-      "exp": 30368,
+      "exp": 30379,
       "coin": 4547,
       "diamond": 0,
       "bank": 0,
@@ -11493,7 +11493,7 @@
       "premiumTime": 0
     },
     "5493498453118@s.whatsapp.net": {
-      "exp": 6018,
+      "exp": 6076,
       "coin": 0,
       "diamond": 9,
       "bank": 0,
@@ -15254,7 +15254,7 @@
       "premiumTime": 0
     },
     "5216863904885@s.whatsapp.net": {
-      "exp": 2679,
+      "exp": 2685,
       "coin": 0,
       "diamond": 12,
       "bank": 0,
@@ -17332,7 +17332,7 @@
       "premiumTime": 0
     },
     "584242426269@s.whatsapp.net": {
-      "exp": 10988,
+      "exp": 11078,
       "coin": 9821,
       "diamond": 8,
       "bank": 0,
@@ -29493,7 +29493,7 @@
       "premiumTime": 0
     },
     "5492214383566@s.whatsapp.net": {
-      "exp": 2856,
+      "exp": 2897,
       "coin": 13423,
       "diamond": 20,
       "bank": 0,
@@ -34428,7 +34428,7 @@
       "premiumTime": 0
     },
     "143941986980089@lid": {
-      "exp": 12655,
+      "exp": 12665,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -36484,7 +36484,7 @@
       "premiumTime": 0
     },
     "120363307197695804@g.us": {
-      "exp": 127,
+      "exp": 133,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -36530,7 +36530,7 @@
       "premiumTime": 0
     },
     "50582310157@s.whatsapp.net": {
-      "exp": 138,
+      "exp": 159,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -37470,7 +37470,7 @@
       "lastrob": 1726971809443
     },
     "5214426802420@s.whatsapp.net": {
-      "exp": 6807,
+      "exp": 6880,
       "coin": 1610,
       "diamond": 6,
       "bank": 0,
@@ -37566,7 +37566,7 @@
       "premiumTime": 0
     },
     "51967856408@s.whatsapp.net": {
-      "exp": 1084,
+      "exp": 1102,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -37796,7 +37796,7 @@
       "premiumTime": 0
     },
     "51923117951@s.whatsapp.net": {
-      "exp": 1957,
+      "exp": 2048,
       "coin": 0,
       "diamond": 20,
       "bank": 23867,
@@ -37843,7 +37843,7 @@
       "premiumTime": 0
     },
     "5213318803895@s.whatsapp.net": {
-      "exp": 50,
+      "exp": 83,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -38439,7 +38439,7 @@
       "premiumTime": 0
     },
     "56950775417@s.whatsapp.net": {
-      "exp": 3789,
+      "exp": 3883,
       "coin": 99,
       "diamond": 20,
       "bank": 0,
@@ -41983,6 +41983,51 @@
       "lastclaim": 0,
       "registered": false,
       "name": ".",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Novato",
+      "autolevelup": false,
+      "chatbot": false,
+      "genero": "Indeciso",
+      "language": "es",
+      "prem": false,
+      "premiumTime": 0
+    },
+    "181836198195455@lid": {
+      "exp": 1,
+      "coin": 0,
+      "diamond": 20,
+      "bank": 0,
+      "lastclaim": 0,
+      "registered": false,
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Novato",
+      "autolevelup": false,
+      "chatbot": false,
+      "genero": "Indeciso",
+      "language": "es",
+      "prem": false,
+      "premiumTime": 0
+    },
+    "5493564636357@s.whatsapp.net": {
+      "exp": 10,
+      "coin": 0,
+      "diamond": 20,
+      "bank": 0,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "+54 9 3564 63-6357",
       "age": -1,
       "regTime": -1,
       "afk": -1,
@@ -46062,6 +46107,23 @@
       "nsfw": false,
       "expired": 0,
       "rules": ""
+    },
+    "51923117951@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": true,
+      "antiLink": false,
+      "viewonce": false,
+      "useDocument": true,
+      "captcha": false,
+      "nsfw": false,
+      "expired": 0,
+      "rules": ""
     }
   },
   "stats": {
@@ -46072,16 +46134,16 @@
       "lastSuccess": 1726972844280
     },
     "dl-play.js": {
-      "total": 818,
-      "success": 670,
-      "last": 1727026835733,
-      "lastSuccess": 1727026835733
+      "total": 821,
+      "success": 673,
+      "last": 1727031818075,
+      "lastSuccess": 1727031818075
     },
     "main-menu.js": {
-      "total": 380,
-      "success": 380,
-      "last": 1727026781119,
-      "lastSuccess": 1727026781119
+      "total": 381,
+      "success": 381,
+      "last": 1727031770978,
+      "lastSuccess": 1727031770978
     },
     "owner-getfile.js": {
       "total": 77,
@@ -46108,10 +46170,10 @@
       "lastSuccess": 1726876775089
     },
     "main-creator.js": {
-      "total": 14,
-      "success": 14,
-      "last": 1726798044152,
-      "lastSuccess": 1726798044152
+      "total": 15,
+      "success": 15,
+      "last": 1727031572573,
+      "lastSuccess": 1727031572573
     },
     "sticker-sticker.js": {
       "total": 138,
@@ -46378,10 +46440,10 @@
       "lastSuccess": 1726977886892
     },
     "owner-ActualizarGithub.js": {
-      "total": 19,
-      "success": 19,
-      "last": 1727027921812,
-      "lastSuccess": 1727027921812
+      "total": 20,
+      "success": 20,
+      "last": 1727031307696,
+      "lastSuccess": 1727031307696
     },
     "dl-gitclone.js": {
       "total": 7,
