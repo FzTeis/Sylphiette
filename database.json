@@ -47,7 +47,7 @@
       "premiumTime": 0
     },
     "17146121800@s.whatsapp.net": {
-      "exp": 93783,
+      "exp": 93833,
       "coin": -2871,
       "diamond": 20,
       "bank": 0,
@@ -348,7 +348,7 @@
       "premiumTime": 0
     },
     "5212431268546@s.whatsapp.net": {
-      "exp": 1272384,
+      "exp": 1272568,
       "coin": 8472,
       "diamond": 20,
       "bank": 0,
@@ -1669,7 +1669,7 @@
       "weekly": 1726472486951
     },
     "12502890430@s.whatsapp.net": {
-      "exp": 2707,
+      "exp": 2761,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -2946,7 +2946,7 @@
       "premiumTime": 0
     },
     "5215534215245@s.whatsapp.net": {
-      "exp": 5444,
+      "exp": 5503,
       "coin": 8400,
       "diamond": 20,
       "bank": 0,
@@ -17332,7 +17332,7 @@
       "premiumTime": 0
     },
     "584242426269@s.whatsapp.net": {
-      "exp": 11078,
+      "exp": 11089,
       "coin": 9821,
       "diamond": 8,
       "bank": 0,
@@ -42386,7 +42386,7 @@
       "rules": ""
     },
     "120363297885023945@g.us": {
-      "isBanned": true,
+      "isBanned": false,
       "welcome": false,
       "detect": false,
       "sWelcome": "",
@@ -46169,10 +46169,10 @@
       "lastSuccess": 1727033801465
     },
     "owner-salvarFile.js": {
-      "total": 125,
-      "success": 124,
-      "last": 1726963660924,
-      "lastSuccess": 1726963660924
+      "total": 126,
+      "success": 125,
+      "last": 1727034110778,
+      "lastSuccess": 1727034110778
     },
     "rg-register.js": {
       "total": 331,
@@ -46403,9 +46403,9 @@
       "lastSuccess": 1726876784937
     },
     "tools-openai.js": {
-      "total": 183,
+      "total": 184,
       "success": 89,
-      "last": 1726963385489,
+      "last": 1727034294395,
       "lastSuccess": 1726963301185
     },
     "econ-leaderboard.js": {
@@ -46457,10 +46457,10 @@
       "lastSuccess": 1726977886892
     },
     "owner-ActualizarGithub.js": {
-      "total": 21,
-      "success": 21,
-      "last": 1727033724505,
-      "lastSuccess": 1727033724505
+      "total": 23,
+      "success": 23,
+      "last": 1727034590439,
+      "lastSuccess": 1727034590439
     },
     "dl-gitclone.js": {
       "total": 7,
@@ -46547,10 +46547,10 @@
       "lastSuccess": 1725409282026
     },
     "owner-deleteFile.js": {
-      "total": 21,
-      "success": 21,
-      "last": 1726943987980,
-      "lastSuccess": 1726943987980
+      "total": 22,
+      "success": 22,
+      "last": 1727034116718,
+      "lastSuccess": 1727034116718
     },
     "bebot-getcode.js": {
       "total": 7,
@@ -46595,10 +46595,10 @@
       "lastSuccess": 1727034089796
     },
     "owner-unbanchat.js": {
-      "total": 13,
-      "success": 13,
-      "last": 1726844850192,
-      "lastSuccess": 1726844850192
+      "total": 14,
+      "success": 14,
+      "last": 1727034104769,
+      "lastSuccess": 1727034104769
     },
     "bebot-stopbot.js": {
       "total": 24,
@@ -46841,9 +46841,9 @@
       "lastSuccess": 1726961251550
     },
     "owner-update.js": {
-      "total": 15,
+      "total": 16,
       "success": 9,
-      "last": 1727020147363,
+      "last": 1727034152073,
       "lastSuccess": 1727020147363
     },
     "dl-tiktokstalk.js": {
