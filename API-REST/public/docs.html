@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[+] I'm Fz - API's | Dashboard [+] </title>
+    <meta property="og:title" content="[+] I'm Fz - API's | Dashboard [+] ">  
+    <meta name="description" content="API - rest para bots de WhatsApp">
+    <meta property="og:image" content="https://github.com/FzTeis.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2d2d2d;
+            margin: 0;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #2d2d2d;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            transition: transform 0.5s;
+            transform: translateX(-300px);
+            z-index: 10;
+        }
+
+        .sidebar.open {
+            transform: translateX(0);
+        }
+
+        .sidebar .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .sidebar .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .sidebar .menu {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar .menu li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar .menu li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            display: block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .sidebar .menu li a:hover {
+            background-color: #1a1a1a;
+        }
+
+        .toggle-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 11;
+        }
+
+        .main-content {
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-content .header {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-content .header img {
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        .main-content .cards {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .main-content .card {
+            background-color: #333;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            color: #fff;
+            width: 100%;
+        }
+
+        .main-content .card h3 {
+            margin: 0;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .main-content .card .status {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">X</button>
+        <div class="logo">
+            <img src="https://github.com/FzTeis.png" alt="Logo">
+            <span>Fz API | Panel</span>
+        </div>
+        <ul class="menu">
+            <li class="nav-item nav-category">
+                <span class="nav-link">Menu de funciones</span>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="#" onclick="toggleApiList()">
+                    <span class="menu-title">Mostrar APIs</span>
+                </a>
+            </li>
+            <div id="apiList" style="display: none;">
+<li class="nav-item"> <a class="nav-link" href="/api/facebook?url=https://fb.watch/ujmoNe9vfM/?mibextid=rS40aB7S9Ucbxw6v&apikey=default">FACEBOOK DOWNLOAD</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/twitter?url=https://twitter.com/alapuchatches/status/1486246112432467970?s=20&apikey=default">TWITTER DOWNLOAD</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/mediafire?url=https://www.mediafire.com/file/39o3dijk4tqyk2f/Acode_base.apk/file&apikey=default">MEDIAFIRE DOWNLOAD</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/ytdl?q=Ecos%20de%20amor&apikey=default">YT DOWNLOAD</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/gpt?query=Hola&apikey=default">CHAT - GPT</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/pinterest?text=Cat&apikey=default">PINTEREST</a></li>
+<li class="nav-item"> <a class="nav-link" href="/api/spotifysearch?query=Kevin+Karel&apikey=default">SPOTIFY - SEARCH</a></li>
+            </div>
+            <li class="nav-item nav-category">
+                <span class="nav-link">Links útiles:</span>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="https://wa.me/522431268546">
+                    <span class="menu-title">¿Dudas? ¡Contáctame!</span>
+                </a>
+            </li>
+                        <li class="nav-item menu-items">
+                <a class="nav-link" href="https://wa.me/17146121800">
+                    <span class="menu-title">Sylphiette - WhatsApp Bot</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <button class="toggle-btn" onclick="toggleSidebar()">≡</button>
+
+    <div class="main-content">
+        <div class="header">
+            <div>
+                <img src="https://github.com/FzTeis.png" alt="User Avatar" width="60">
+                <h1 style="font-size: 24px; margin-left: 20px;">Dashboard - Fz | API</h1>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Error</h3>
+                <p>Total de visitas: <span class="status">100%</span> Último mes</p>
+            </div>
+            <div class="card">
+                <h3>Mantenimiento</h3>
+                <p>Siempre dándole mantenimiento: <span class="status">100%</span></p>
+            </div>
+            <div class="card">
+                <h3>+200 Solicitudes</h3>
+                <p><span class="status">100%</span> Último mes</p>
+            </div>
+            <div class="card">
+                <h3>Buenas funciones</h3>
+                <p>Buen contenido: <span class="status">100%</span> Siempre</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para abrir/cerrar el sidebar
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('open');
+        }
+
+        // Función para mostrar/ocultar la lista de APIs
+        function toggleApiList() {
+            const apiList = document.getElementById('apiList');
+            apiList.style.display = apiList.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
