@@ -47,7 +47,7 @@
       "premiumTime": 0
     },
     "17146121800@s.whatsapp.net": {
-      "exp": 93738,
+      "exp": 93783,
       "coin": -2871,
       "diamond": 20,
       "bank": 0,
@@ -348,7 +348,7 @@
       "premiumTime": 0
     },
     "5212431268546@s.whatsapp.net": {
-      "exp": 1272253,
+      "exp": 1272384,
       "coin": 8472,
       "diamond": 20,
       "bank": 0,
@@ -1669,7 +1669,7 @@
       "weekly": 1726472486951
     },
     "12502890430@s.whatsapp.net": {
-      "exp": 2589,
+      "exp": 2707,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -2946,7 +2946,7 @@
       "premiumTime": 0
     },
     "5215534215245@s.whatsapp.net": {
-      "exp": 5202,
+      "exp": 5444,
       "coin": 8400,
       "diamond": 20,
       "bank": 0,
@@ -8102,7 +8102,7 @@
       "premiumTime": 0
     },
     "51927803866@s.whatsapp.net": {
-      "exp": 18,
+      "exp": 59,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -37566,7 +37566,7 @@
       "premiumTime": 0
     },
     "51967856408@s.whatsapp.net": {
-      "exp": 1102,
+      "exp": 1104,
       "coin": 0,
       "diamond": 20,
       "bank": 0,
@@ -42386,7 +42386,7 @@
       "rules": ""
     },
     "120363297885023945@g.us": {
-      "isBanned": false,
+      "isBanned": true,
       "welcome": false,
       "detect": false,
       "sWelcome": "",
@@ -46124,6 +46124,23 @@
       "nsfw": false,
       "expired": 0,
       "rules": ""
+    },
+    "51927803866@s.whatsapp.net": {
+      "isBanned": false,
+      "welcome": false,
+      "detect": false,
+      "sWelcome": "",
+      "sBye": "",
+      "sPromote": "",
+      "sDemote": "",
+      "delete": true,
+      "antiLink": false,
+      "viewonce": false,
+      "useDocument": true,
+      "captcha": false,
+      "nsfw": false,
+      "expired": 0,
+      "rules": ""
     }
   },
   "stats": {
@@ -46146,10 +46163,10 @@
       "lastSuccess": 1727031770978
     },
     "owner-getfile.js": {
-      "total": 77,
-      "success": 77,
-      "last": 1727031210672,
-      "lastSuccess": 1727031210672
+      "total": 79,
+      "success": 79,
+      "last": 1727033801465,
+      "lastSuccess": 1727033801465
     },
     "owner-salvarFile.js": {
       "total": 125,
@@ -46176,9 +46193,9 @@
       "lastSuccess": 1727031572573
     },
     "sticker-sticker.js": {
-      "total": 138,
+      "total": 139,
       "success": 46,
-      "last": 1726985400257,
+      "last": 1727033856350,
       "lastSuccess": 1726942421163
     },
     "enable.js": {
@@ -46218,10 +46235,10 @@
       "lastSuccess": 1726463235804
     },
     "owner-exec.js": {
-      "total": 1666,
-      "success": 1666,
-      "last": 1727025712076,
-      "lastSuccess": 1727025712076
+      "total": 1668,
+      "success": 1668,
+      "last": 1727034040768,
+      "lastSuccess": 1727034040768
     },
     "dl-yts.js": {
       "total": 122,
@@ -46440,10 +46457,10 @@
       "lastSuccess": 1726977886892
     },
     "owner-ActualizarGithub.js": {
-      "total": 20,
-      "success": 20,
-      "last": 1727031307696,
-      "lastSuccess": 1727031307696
+      "total": 21,
+      "success": 21,
+      "last": 1727033724505,
+      "lastSuccess": 1727033724505
     },
     "dl-gitclone.js": {
       "total": 7,
@@ -46572,10 +46589,10 @@
       "lastSuccess": 1726978581363
     },
     "owner-banchat.js": {
-      "total": 16,
-      "success": 16,
-      "last": 1726623342190,
-      "lastSuccess": 1726623342190
+      "total": 17,
+      "success": 17,
+      "last": 1727034089796,
+      "lastSuccess": 1727034089796
     },
     "owner-unbanchat.js": {
       "total": 13,
