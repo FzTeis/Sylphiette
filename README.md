@@ -1,4 +1,4 @@
- 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=150&section=header&text=Bienvenido%20a%20mi%20perfil&fontSize=30&fontColor=FFFFFF&animation=fadeIn" width="100%"/> 
 <p align="center"> 
 <img src="https://telegra.ph/file/984d8ca31c6552a19f378.jpg" />
 <p/>
@@ -61,3 +61,4 @@ $ npm start
 ### 🌟 AGRADECIMIENTOS
 [![TheShadowBrokers1](https://github.com/BrunoSobrino.png?size=60)](https://github.com/BrunoSobrino)
 [![FG98F](https://github.com/FG98F.png?size=60)](https://github.com/FG98F) 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=150&section=footer" width="100%"/>
