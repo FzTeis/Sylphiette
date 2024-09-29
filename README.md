@@ -28,7 +28,7 @@
 - [x] Inglés
 
 ***
-### **`VENTAS`**
+### **`📂 VENTAS:`**
 <a href="https://chat.whatsapp.com/HAt711AdgXFG1BI9FIACKr?text=Hola+me+interesa+un+servicio"><img src="https://files.catbox.moe/oit4rg.jpg" height="130px"></a>
 
 <details>
@@ -38,7 +38,7 @@
 - **Mi contacto:** [`Aquí`](https://wa.me/522431268546?text=Hola)
 </details>
 
-### **`TK HOST 📲`**
+### **`🚀 TK HOST:`**
 <a href="https://dash.tk-joanhost.com"><img src="https://i.ibb.co/pr8TnWJ/SAVE-20240915-183758.jpg" height="130px"></a>
 
 <details>
@@ -49,6 +49,8 @@
 - **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029VaoZXbk6RGJNYQVP8r27)
 - **Registrarse:** [`Aquí`](https://dash.tk-joanhost.com/register?ref=8DSQVA9e)
 </details>
+
+***
 
 ### TERMUX
 Comandos:
