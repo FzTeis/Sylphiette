@@ -37,9 +37,9 @@
 - **Grupo:** [`Aquí`](https://chat.whatsapp.com/HAt711AdgXFG1BI9FIACKr?text=Hola+me+interesa+un+servicio)
 - **Mi contacto:** [`Aquí`](https://wa.me/522431268546?text=Hola)
 </details>
-***
+
 ### **`TK HOST 📲`**
-<a href="https://dash.tk-joanhost.com"><img src="https://i.ibb.co/pr8TnWJ/SAVE-20240915-183758.jpg" height="125px"></a>
+<a href="https://dash.tk-joanhost.com"><img src="https://i.ibb.co/pr8TnWJ/SAVE-20240915-183758.jpg" height="130px"></a>
 
 <details>
  <summary><b>:paperclip: Enlaces Importantes</b></summary>
