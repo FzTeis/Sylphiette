@@ -1,31 +1,69 @@
-let handler = async (m, { text, usedPrefix, command }) => {
-  if (!text) throw `Ingresa un texto`;
-
-const syms1 = `Actuaras como un Bot de WhatsApp el cual fue creado por Fz, tu seras Sylphiette. Responde con un tono amable / inteligente y responde correctamente a lo que te pidan añadiendo una pequeña nota usando: ## Nota: < Nota que darás >. La nota será en el contexto de lo que te pidan.`
-let nombre = global.db.data.users[m.sender].name
-let a = await fetch(`https://api.cafirexos.com/api/chatgpt?text=${text}&name=${nombre}&prompt=${syms1}`)
-let res = await a.json()
-
-await conn.sendMessage(m.chat, { react: { text: `⏱️`, key: m.key }});
-  
-  await conn.sendMessage(m.chat, {
-    text: res.resultado,
-    contextInfo: {
-       externalAdReply :{ showAdAttribution: true,
-                        sourceUrl: 'https://youtube.com/watch?v=TMT9MNM-NHg',
-                        mediaType: 2,
-                        description: `🍁 This bot is still in development.`,
-                        title: `🌺 Thank you for using Sylphiette, the best WhatsApp bot.`,
-                        body: `⚘ Developed by I\`m Fz ~`,          previewType: 0,
-                        thumbnail: await (await fetch('https://telegra.ph/file/5993d734f0253a1dc0215.jpg')).buffer(),
-                        mediaUrl: insta,
-                        renderLargerThumbnail: true
-      }
-    }
-  }, { quoted: m })
-  m.react(done)
-  
-};
-handler.command = handler.help = ['ai', 'ia', 'openai', 'chatgpt'];
-handler.tags = ['tools'];
+let handler = async(m, { conn, usedPrefix, command, text }) => {
+	if (!text) return m.reply(`*[ 🌴 ] Ingresa un texto. Ejemplo: ${ usedPrefix + command } ¿Cómo estás el día de hoy?*`);
+	let chgptdb = global.chatgpt.data.users[m.sender];
+        chgptdb.push({ role: 'user', content: text });
+	m.reply(wait);
+	try {
+		const opsi = {
+			messages: [
+			{
+				role: "system",
+				content: sistema1
+			},
+			...global.chatgpt.data.users[m.sender],
+			{
+				role: "user",
+				content: text
+			}
+			],
+			temperature: 0.8,
+			top_p: 0.7,
+			top_k: 40
+		}
+		
+		const res = await gemini(opsi);
+		const { answer } = res;
+		await conn.sendMessage(m.chat, { text: answer }, { quoted: m });
+	} catch (e) {
+		return e
+	}
+}
+handler.command = ['ai', 'ia', 'chat', 'gpt', 'chatgpt', 'sylph']
+handler.help = ['ai', 'ia', 'chat', 'gpt', 'chatgpt']
+handler.tags = ['tools']
 export default handler
+
+async function gemini(options) {
+  try {
+    return await new Promise(async(resolve, reject) => {
+      options = {
+        model: "gemini-pro",
+        messages: options?.messages,
+        temperature: options?.temperature || 0.9,
+        top_p: options?.top_p || 0.7,
+        top_k: options?.top_p || 40,
+      }
+      if(!options?.messages) return reject("missing messages input payload!");
+      if(!Array.isArray(options?.messages)) return reject("invalid array in messages input payload!");
+      if(isNaN(options?.top_p)) return reject("invalid number in top_p payload!");
+      if(isNaN(options?.top_k)) return reject("invalid number in top_k payload!");
+      axios.post("https://api.acloudapp.com/v1/completions", options, {
+        headers: {
+          authorization: "sk-9jL26pavtzAHk9mdF0A5AeAfFcE1480b9b06737d9eC62c1e"
+        }
+      }).then(res => {
+        const data = res.data;
+        if(!data.choices[0].message.content) return reject("failed get response message!")
+        resolve({
+          success: true,
+          answer: data.choices[0].message.content
+        })
+      }).catch(reject)
+    })
+  } catch (e) {
+    return {
+      success: false,
+      errors: [e]
+    }
+  }
+}
