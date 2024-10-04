@@ -34,7 +34,7 @@
 <details>
  <summary><b>Click para mostrar los links</b></summary>
 
-- **Canal de WhatsApp:** [`Aquí`](https://store.azuraultra.com/)
+- **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029VamOVm08fewr5jix2Z3t)
 - **Registrarse:** [`Aquí`](https://store.azuraultra.com/register?ref=8N9gN0fj)
 </details>
 
