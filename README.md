@@ -28,14 +28,14 @@
 - [x] Inglés
 
 ***
-### **`📂 VENTAS:`**
-<a href="https://chat.whatsapp.com/HAt711AdgXFG1BI9FIACKr?text=Hola+me+interesa+un+servicio"><img src="https://files.catbox.moe/oit4rg.jpg" height="130px"></a>
+### **`☄️ Azura Hosting:`**
+<a href="https://store.azuraultra.com/"><img src="https://i.ibb.co/pxhKP6r/Abstract-All.jpg" height="130px"></a>
 
 <details>
  <summary><b>Click para mostrar los links</b></summary>
 
-- **Grupo:** [`Aquí`](https://chat.whatsapp.com/HAt711AdgXFG1BI9FIACKr?text=Hola+me+interesa+un+servicio)
-- **Mi contacto:** [`Aquí`](https://wa.me/522431268546?text=Hola)
+- **Canal de WhatsApp:** [`Aquí`](https://store.azuraultra.com/)
+- **Registrarse:** [`Aquí`](https://store.azuraultra.com/register?ref=8N9gN0fj)
 </details>
 
 ### **`🚀 TK HOST:`**
