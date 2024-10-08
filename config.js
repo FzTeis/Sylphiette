@@ -5,7 +5,9 @@ import yts from 'yt-search'
 //import Scraper from '@SumiFX/Scraper'
 import * as Scraper from 'ruhend-scraper'
 import axios from 'axios'
+import https from 'https'
 import chalk from 'chalk'
+import { ytmp4, ytmp3 } from 'ruhend-scraper'
 import fg from 'api-dylux'
 import fs from 'fs'
 import yt from 'ytdl-core'
@@ -16,8 +18,6 @@ import { fileURLToPath } from 'url'
 import path, { join } from 'path'
 import * as scrapers from '@bochilteam/scraper'
 import { es } from "./lib/total-idiomas.js"
-import ytmp44 from "./lib/ytmp44.js"
-import ytmp33 from "./lib/ytmp33.js"
 global.botnumber = "";
 global.confirmCode = "";
 global.owner = [
@@ -70,12 +70,8 @@ global.path = path
 global.yts = yts
 global.fetch = fetch
 global.fileType = fileType
-//global.fromBuffer = fromBuffer
 global.Scraper = Scraper
 global.scrapers = scrapers
-
-global.ytmp44 = ytmp44
-global.ytmp33 = ytmp33
 
 global.ytdl = ytdl
 global.yt = yt
@@ -118,6 +114,38 @@ global.facebookDl = async function facebookDl(t) {
       },
     });
   });
+}
+//////////// YOUTUBE
+global.DOWNLOAD_YT = async function DOWNLOAD_YT(input) {
+    let ytSearch = await yts(input)
+    let { title, url, thumbnail, description, views, ago, duration } = ytSearch.videos[0]
+
+    let { video, quality, size } = await ytmp4(url)
+
+    let { audio } = await ytmp3(url)
+
+    let resultados = {
+        Status: true,
+        Creator: "i'm Fz",
+        title: title,
+        description: description,
+        views: views,
+        ago: ago,
+        duration: duration,
+        url: url,
+        video: {
+            dl_link: video,
+            size: size,
+            quality: quality
+        },
+        audio: {
+            dl_link: audio
+        }
+
+    }
+
+    return resultados
+
 }
 /////////// INSTAGRAM:
  global.igDown = async function igDown(url) {
