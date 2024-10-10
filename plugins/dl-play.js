@@ -20,11 +20,12 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
         caption: body 
     }, { quoted: fkontak });
 
-    let res = isVideo ? await ytmp44(urls) : await ytmp33(urls);
+    let res = await DOWNLOAD_YT(urls)
     let type = isVideo ? 'video' : 'audio';
-    
+    let video = res.video.dl_link;
+    let audio = res.audio.dl_link;
     conn.sendMessage(m.chat, { 
-        [type]: { url: res.resultados.descargar }, 
+        [type]: { url: isVideo ? video : audio }, 
         gifPlayback: false, 
         mimetype: isVideo ? "video/mp4" : "audio/mpeg" 
     }, { quoted: m });
