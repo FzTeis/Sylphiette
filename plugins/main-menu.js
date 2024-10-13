@@ -40,7 +40,7 @@ const defaultMenu = {
 「 ${wm} ㊎ 」\n
  ⏍ Hello @${m.sender.split`@`[0]}, ${ucpn}
  
-  乂─────『 *U  S  E  R* 』─────乂
+  乂─────『 *\`U  S  E  R\`* 』─────乂
    *|* • *Name:* %name
    *|* • *Coins:* %coin
    *|* • *Role:* %role
@@ -50,7 +50,7 @@ const defaultMenu = {
    *|* • *¿VIP?:* *${global.db.data.users[m.sender].premiumTime > 1 ? 'Si': 'No'}*
   ╰───────────────⳹
  
-  乂─────『 *I  N  F  O* 』─────乂
+  乂─────『 *\`I  N  F  O\`* 』─────乂
    *|* • *Bot Name:* ${botName}
    *|* • *Platform:* %platform
    *|* • *Type:* NodeJs
@@ -65,10 +65,10 @@ const defaultMenu = {
   
   %sbot
   
-> [❗] ¿Some command has error? ¡Report it to the developer for a solution! 🦦
+\`[ 🌱 ] ¿Some command has error? ¡Report it to the developer for a solution! 🦦\`
   
   乂────『 *I N F O   C M D* 』────乂 
-  │ *%totalfeatures* _Commands available for use_
+  │ \`%totalfeatures\` _Commands available for use_
   ╰───────────────⳹
   
   乂────『 *I N F O   M E N U* 』────乂 
@@ -76,17 +76,17 @@ const defaultMenu = {
   │ *𖦹 Diamond: 💎*
   ╰───────────────⳹
 
-> https://whatsapp.com/channel/0029Va6InNBFCCoM9xzKFG3G
+\`https://whatsapp.com/channel/0029Va6InNBFCCoM9xzKFG3G\`
 
   ╭┈──────────────── ꒰ 🌺 ꒱
  │ *𖦹 ¡Remember that you can join the bot's official channel!*
   ╰─┈➤ ‌ ${xx}Sylph - Is The Best${xx}\n
 `.trimStart(),
-  header: `╭──ꕥ *%category* ꕥ──`,
-  body: `│✾ ${xx}%cmd${xx} %isdiamond %isPremium\n`,
+  header: `╭──ꕥ *\`%category\`* ꕥ──`,
+  body: `│✾ *\`%cmd\`* %isdiamond %isPremium\n`,
   footer: `╰─❑\n`,
   after: `
-╭───❑ 「 INFORMACION 」 ❑───
+╭───❑ 「 \`INFORMACION\` 」 ❑───
 │ Si quieres unir el bot a tu grupo,
 │ contacta con el creador usando:
 │ #owner o bien, toca el @tag del 
