@@ -1,69 +1,48 @@
-let handler = async(m, { conn, usedPrefix, command, text }) => {
-	if (!text) return m.reply(`*[ 🌴 ] Ingresa un texto. Ejemplo: ${ usedPrefix + command } ¿Cómo estás el día de hoy?*`);
-	let chgptdb = global.chatgpt.data.users[m.sender];
-        chgptdb.push({ role: 'user', content: text });
-	m.reply(wait);
-	try {
-		const opsi = {
-			messages: [
-			{
-				role: "system",
-				content: sistema1
-			},
-			...global.chatgpt.data.users[m.sender],
-			{
-				role: "user",
-				content: text
-			}
-			],
-			temperature: 0.8,
-			top_p: 0.7,
-			top_k: 40
-		}
-		
-		const res = await gemini(opsi);
-		const { answer } = res;
-		await conn.sendMessage(m.chat, { text: answer }, { quoted: m });
-	} catch (e) {
-		return e
-	}
-}
-handler.command = ['ai', 'ia', 'chat', 'gpt', 'chatgpt', 'sylph']
-handler.help = ['ai', 'ia', 'chat', 'gpt', 'chatgpt']
-handler.tags = ['tools']
-export default handler
-
-async function gemini(options) {
-  try {
-    return await new Promise(async(resolve, reject) => {
-      options = {
-        model: "gemini-pro",
-        messages: options?.messages,
-        temperature: options?.temperature || 0.9,
-        top_p: options?.top_p || 0.7,
-        top_k: options?.top_p || 40,
-      }
-      if(!options?.messages) return reject("missing messages input payload!");
-      if(!Array.isArray(options?.messages)) return reject("invalid array in messages input payload!");
-      if(isNaN(options?.top_p)) return reject("invalid number in top_p payload!");
-      if(isNaN(options?.top_k)) return reject("invalid number in top_k payload!");
-      axios.post("https://api.acloudapp.com/v1/completions", options, {
-        headers: {
-          authorization: "sk-9jL26pavtzAHk9mdF0A5AeAfFcE1480b9b06737d9eC62c1e"
+import Groq from 'groq-sdk';
+const handler = async (m, { conn, text, usedPrefix, command }) => {
+const groq = new Groq({ apiKey: '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' });
+    conn.sylph = conn.sylph ? conn.sylph : {};
+    let ya = text && m.quoted ? (m.quoted.text ? text + '\n\n' + m.quoted.text : text) : text ? text : (m.quoted ? (m.quoted.text ? m.quoted.text : false) : false);
+    if (!ya) throw `\`\`\`[ 🍄 ] Por favor ingresa un texto. Ejemplo: ${usedPrefix + command} Hola\`\`\``
+      try {
+        let { key } = await conn.sendMessage(m.chat, { text: wait }, { quoted: m });
+        if (!(m.sender in conn.sylph))
+        conn.sylph[m.sender] = [{
+          role: 'system',
+          content: `Eres Sylph, una inteligencia artificial creada por i'm Fz, responde de manera clara y concisa para que los usuarios entiendan mejor tus respuestas. El nombre del usuario será: ${conn.getName(m.sender)}`,
+        }];
+  
+        if (conn.sylph[m.sender].length > 10) {
+          conn.sylph[m.sender] = conn.sylph[m.sender].slice(-1);
         }
-      }).then(res => {
-        const data = res.data;
-        if(!data.choices[0].message.content) return reject("failed get response message!")
-        resolve({
-          success: true,
-          answer: data.choices[0].message.content
-        })
-      }).catch(reject)
-    })
-  } catch (e) {
-    return {
-      success: false,
-      errors: [e]
-    }
+
+        conn.sylph[m.sender].push({
+          role: 'user',
+          content: ya,
+        });
+
+        let msg = [ ...conn.sylph[m.sender], {
+          role: 'user',
+          content: ya,
+        }];
+
+        const payloads = {
+          messages: msg,
+          model: 'llama-3.1-70b-versatile'
+        };
+
+        const json = await groq.chat.completions.create(payloads)
+        let message = json.choices[0].message.content;
+        conn.sylph[m.sender].push({
+          role: "system",
+          content: message,
+        });
+        await conn.sendMessage(m.chat, { text: message, edit: key }, { quoted: m });
+      } catch (e) {
+        return m.reply(e.message)
+      }
   }
-}
+handler.command = ['ai2', 'openai', 'ia', 'chatgpt'];
+handler.help = ['openai', 'ia', 'chatgpt'];
+handler.tags = ['tools'];
+export default handler;
