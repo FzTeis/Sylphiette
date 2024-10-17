@@ -20,10 +20,10 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
         caption: body 
     }, { quoted: fkontak });
 
-    let res = await DOWNLOAD_YT(urls)
+    let res = await dl_vid(urls)
     let type = isVideo ? 'video' : 'audio';
-    let video = res.video.dl_link;
-    let audio = res.audio.dl_link;
+    let video = res.data.mp4;
+    let audio = res.data.mp3;
     conn.sendMessage(m.chat, { 
         [type]: { url: isVideo ? video : audio }, 
         gifPlayback: false, 
@@ -35,3 +35,24 @@ handler.command = ['play', 'playvid'];
 handler.help = ['play', 'playvid'];
 handler.tags = ['dl'];
 export default handler;
+
+async function dl_vid(url) {
+    const response = await fetch('https://shinoa.us.kg/api/download/ytdl', {
+        method: 'POST',
+        headers: {
+            'accept': '*/*',
+            'api_key': 'free',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            text: url
+        })
+    });
+
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return data;
+}
