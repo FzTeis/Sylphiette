@@ -50,6 +50,16 @@
 - **Registrarse:** [`Aquí`](https://dash.tk-joanhost.com/register?ref=8DSQVA9e)
 </details>
 
+### **`⛲ Hosting Py:`**
+<a href="https://dahs.hostingpy.shop/"><img src="https://files.catbox.moe/lr92z2.jpg" height="130px"></a>
+
+<details>
+ <summary><b>Click para mostrar los links</b></summary>
+
+- **Dashboard:** [`Aquí`](https://dahs.hostingpy.shop/)
+- **Registrarse:** [`Aquí`](https://dahs.hostingpy.shop/register)
+</details>
+
 ***
 
 ### TERMUX
