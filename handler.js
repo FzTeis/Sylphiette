@@ -148,6 +148,7 @@ export async function handler(chatUpdate) {
                     chat.captcha = false
                 if (!('nsfw' in chat))
                     chat.nsfw = false
+                if (!('modoadmin' in chat)) chat.modoadmin = false
                 if (!isNumber(chat.expired))
                     chat.expired = 0
                  if (!('rules' in chat))
@@ -167,6 +168,7 @@ export async function handler(chatUpdate) {
                     useDocument: true,
                     captcha: false,
                     nsfw: false, 
+                    modoadmin: false,
                     expired: 0,
                     rules: '',
                 }
