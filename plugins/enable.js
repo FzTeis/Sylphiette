@@ -127,7 +127,14 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       bot.restrict = isEnable
       break
-    
+    case 'modoadmin': case 'soloadmin': case 'modeadmin':
+if (m.isGroup) {
+if (!(isAdmin || isOwner)) {
+global.dfail('admin', m, conn)
+throw false
+}}
+chat.modoadmin = isEnable          
+break
     case 'onlypv':
     case 'onlydm':
     case 'onlymd':
@@ -158,11 +165,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     default:
       //if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage, { quoted: m })
       if (!/[01]/.test(command)) return m.reply(`
-☁️ִ໋͙͙͙͙͙͙͙͙͙͙⏜❟︵ֹ̩̥̩̥̩̥̩̩̥⏜੭🧝‍♂️୧ֹ⏜︵ֹ̩̥̩̥̩̥̩̥̩̥̩̥̩̥❟⏜፞☁️ִ໋͙͙͙͙͙͙͙͙͙͙.
-├≡ Lista de Opciones
-├┈・──・──・﹕₊˚ ✦・୨୧・
-╘━ꥇ۬⏝۬︶⊹̇︶ٜ⊹︶ׅ⊹ֺ︶߭⊹︶۬⊹︶ꥇ̇ꥈׄ̇⏝۬ꥇ
-
+☁️ \`໋≡ Lista de Opciones:\`
   乂 *ＡＤＭＩＮ*
 ${xx} -------------------------
  • captcha
@@ -171,6 +174,7 @@ ${xx} -------------------------
  • detect 
  • document
  • nsfw
+ • modoadmin
 ${xx}
   乂 *ＵＳＥＲＳ*
 ${xx} -------------------------
