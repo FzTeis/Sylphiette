@@ -65,15 +65,7 @@
 ### TERMUX
 Comandos:
 ```sh
-$ pkg upgrade -y && pkg update -y
-$ pkg install git -y
-$ pkg install nodejs -y
-$ pkg install ffmpeg -y
-$ pkg install imagemagick -y
-$ git clone https://github.com/FzTeis/Sylphiette
-$ cd Sylphiette
-$ npm i 
-$ npm start
+$ No hay pijes, de momento solo funciona en servicios Hosting que ofrezcan nodejs 🕊️
 ```
 1. Esperar a que se inicie el bot...
 2. Elige una de las opciones para establecer la conexión.
