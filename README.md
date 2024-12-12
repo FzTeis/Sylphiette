@@ -57,7 +57,7 @@
  <summary><b>Click para mostrar los links</b></summary>
 
 - **Dashboard:** [`Aquí`](https://dahs.hostingpy.shop/)
-- **Registrarse:** [`Aquí`](https://dahs.hostingpy.shop/register?ref=VbV13KGv)
+- **Registrarse:** [`Aquí`](https://dahs.hostingpy.shop/register?ref=qynHnQnY)
 </details>
 
 ***
