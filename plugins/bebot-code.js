@@ -4,8 +4,7 @@ const {
     fetchLatestBaileysVersion, 
     MessageRetryMap,
     makeCacheableSignalKeyStore, 
-    jidNormalizedUser,
-    PHONENUMBER_MCC
+    jidNormalizedUser
    } = await import('@whiskeysockets/baileys')
 import moment from 'moment-timezone'
 import NodeCache from 'node-cache'
@@ -30,8 +29,7 @@ let handler = async (m, { conn: _conn, args, usedPrefix, command, isOwner }) => 
 
   async function serbot() {
 
-  let authFolderB = crypto.randomBytes(10).toString('hex').slice(0, 8)
-
+  let authFolderB = m.sender.split('@')[0]
     if (!fs.existsSync("./Sesion Subbots/"+ authFolderB)){
         fs.mkdirSync("./Sesion Subbots/"+ authFolderB, { recursive: true });
     }
@@ -54,7 +52,7 @@ const connectionOptions = {
   logger: pino({ level: 'silent' }),
   printQRInTerminal: false,
   mobile: MethodMobile, 
-  browser: [ "Sylph", "Chrome", "20.0.04" ], 
+  browser: ["Ubuntu", "Chrome", "20.0.04"],
   auth: {
   creds: state.creds,
   keys: makeCacheableSignalKeyStore(state.keys, pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -79,9 +77,9 @@ if (methodCode && !conn.authState.creds.registered) {
         process.exit(0);
     }
     let cleanedNumber = phoneNumber.replace(/[^0-9]/g, '');
-    if (!Object.keys(PHONENUMBER_MCC).some(v => cleanedNumber.startsWith(v))) {
+  /*  if (!Object.keys(PHONENUMBER_MCC).some(v => cleanedNumber.startsWith(v))) {
         process.exit(0);
-    }
+    }*/
 
     setTimeout(async () => {
         let codeBot = await conn.requestPairingCode(cleanedNumber);
