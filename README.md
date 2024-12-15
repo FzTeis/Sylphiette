@@ -65,7 +65,7 @@
 ### TERMUX
 Comandos:
 ```sh
-$ No hay pijes, de momento solo funciona en servicios Hosting que ofrezcan nodejs 🕊️
+$ No hay pijes, de momento solo funciona en servicios Hosting que ofrezcan nodejs como los de arriba 🕊️
 ```
 1. Esperar a que se inicie el bot...
 2. Elige una de las opciones para establecer la conexión.
