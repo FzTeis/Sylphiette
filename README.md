@@ -28,14 +28,14 @@
 - [x] Inglés
 
 ***
-### **`☄️ Azura Hosting:`**
-<a href="https://store.azuraultra.com/"><img src="https://i.ibb.co/pxhKP6r/Abstract-All.jpg" height="130px"></a>
+### **`☄️ Sky Ultra Plus:`**
+<a href="https://dash.skyultraplus.com/"><img src="https://i.ibb.co/X8knsB6/Sylph.jpg" height="130px"></a>
 
 <details>
  <summary><b>Click para mostrar los links</b></summary>
 
-- **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029VamOVm08fewr5jix2Z3t)
-- **Registrarse:** [`Aquí`](https://store.azuraultra.com/register?ref=8N9gN0fj)
+- **Panel:** [`Aquí`](https://panel.skyultraplus.com)
+- **Registrarse:** [`Aquí`](https://dash.skyultraplus.com/register?ref=8N9gN0fj)
 </details>
 
 ### **`🚀 TK HOST:`**
