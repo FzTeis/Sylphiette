@@ -48,9 +48,9 @@ async function ensureTmpFolder() {
     const folderExists = await fsPromises.access(tmpDir).then(() => true).catch(() => false);
     if (!folderExists) {
       await fsPromises.mkdir(tmpDir);
-      console.log('La carpeta "tmp" ha sido creada con éxito.');
+        console.log(chalk.yellow(`📂 La carpeta tmp ha sido creada con éxito.`));
     } else {
-      console.log('La carpeta "tmp" ya existe.');
+      console.log(chalk.cyan('📁 La carpeta tmp ya existe.'));
     }
   } catch (error) {
     console.error('Ocurrió un error al verificar o crear la carpeta "tmp":', error);
