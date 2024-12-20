@@ -28,17 +28,19 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
   let result;
   try {
     if (command === 'play' || command === 'yta' || command === 'ytmp3') {
-      result = await fg.yta(videoInfo.url);
+      let hh = await fetch(`https://api.siputzx.my.id/api/dl/youtube/mp3?url=${videoInfo.url}`);
+      result = await hh.json()
     } else if (command === 'playvid' || command === 'ytv' || command === 'play2' || command === 'ytmp4') {
-      result = await fg.ytv(videoInfo.url);
+    let rr = await fetch(`https://deliriussapi-oficial.vercel.app/download/ytmp4?url=${videoInfo.url}`);
+      result = await rr.json()
     } else {
       throw "Comando no reconocido.";
     }
-
+let url_dl = isVideo ? result.data.download.url : result.data
     conn.sendMessage(m.chat, {
-      [isVideo ? 'video' : 'audio']: { url: result.dl_url },
+      [isVideo ? 'video' : 'audio']: { url: url_dl },
       mimetype: isVideo ? "video/mp4" : "audio/mpeg",
-      caption: `Título: ${result.title}`,
+      caption: isVideo ? `URL: ${videoInfo.url}` : '',
     }, { quoted: m });
 
   } catch (error) {
@@ -60,8 +62,3 @@ const getVideoId = (url) => {
   }
   throw new Error("Invalid YouTube URL");
 };
-
-async function acc(url) {
-  const respuesta = await axios.get(`http://tinyurl.com/api-create.php?url=${url}`);
-  return respuesta.data;
-}
