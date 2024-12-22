@@ -10,7 +10,6 @@
         "plugins": "plugins"
     },
     "scripts": {
-        "preinstall": "npm uninstall canvas || true",
         "start": "node index.js",
         "test": "node test.js",
         "test2": "nodemon index.js"
@@ -44,7 +43,7 @@
         "@bochilteam/scraper": "^4.2.4",
         "@kaviaann/scrape": "^1.0.1",
         "@vitalets/google-translate-api": "^9.2.0",
-        "@whiskeysockets/baileys": "^6.7.5",
+        "@whiskeysockets/baileys": "latest",
         "@xct007/frieren-scraper": "^0.0.2",
         "google-libphonenumber": "latest",
         "acrcloud": "^1.4.0",
@@ -54,6 +53,7 @@
         "awesome-phonenumber": "^3.4.0",
         "axios": "^1.1.2",
         "btch-downloader": "^2.3.2",
+        "canvas": "^2.11.2",
         "canvafy": "^7.2.0",
         "cfonts": "^3.1.1",
         "chalk": "^5.1.0",
