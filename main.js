@@ -160,7 +160,7 @@ const connectionOptions = {
 logger: pino({ level: 'silent' }),
 printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['Sylphiette', 'Edge', '20.0.04'] : methodCodeQR ? ['Sylphiette', 'Edge', '20.0.04'] : ["Ubuntu", "Chrome", "20.0.04"],
+browser: opcion == '1' ? ['Sylphiette', 'Edge', '20.0.04'] : methodCodeQR ? ['Sylphiette', 'Edge', '20.0.04'] : ["Ubuntu", "Opera", "20.0.04"],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -513,7 +513,7 @@ setInterval(async () => {
 }, 1000 * 60 * 60);
 setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
-  await purgeSessionSB();
+ // await purgeSessionSB();
   
 }, 1000 * 60 * 60);
 setInterval(async () => {
