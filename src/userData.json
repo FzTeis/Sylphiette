@@ -1,0 +1,116 @@
+{
+  "5212431268546@s.whatsapp.net": {
+    "personajes": {
+      "Paul Greyrat": {
+        "power": 55,
+        "img": "https://ejemplo.com",
+        "valor": 10000,
+        "tipo": "ataque"
+      },
+      "Rudeus Greyrat": {
+        "power": 90,
+        "img": "https://qu.ax/QsNAP.jpg",
+        "valor": 10000,
+        "tipo": "magia"
+      }
+    },
+    "poder": 145
+  },
+  "584120515006@s.whatsapp.net": {
+    "personajes": {
+      "Roxy Migurdia": {
+        "power": 70,
+        "img": "https://qu.ax/ZWxzW.jpg",
+        "valor": 100,
+        "tipo": "magia"
+      },
+      "Ghislaine Dedoldia": {
+        "power": 78,
+        "img": "https://ejemplo.com",
+        "valor": 52000,
+        "tipo": "ataque"
+      },
+      "Zenith Greyrat": {
+        "power": 52,
+        "img": "https://ejemplo.com",
+        "valor": 26000,
+        "tipo": "soporte"
+      },
+      "Lilia": {
+        "power": 30,
+        "img": "https://ejemplo.com",
+        "valor": 20000,
+        "tipo": "soporte"
+      }
+    },
+    "poder": 230
+  },
+  "5217774800345@s.whatsapp.net": {
+    "personajes": {
+      "Sylphiette": {
+        "power": 50,
+        "img": "https://ejemplo.com",
+        "valor": 25000,
+        "tipo": "soporte"
+      }
+    },
+    "poder": 50
+  },
+  "8617178583493@s.whatsapp.net": {
+    "personajes": {
+      "Eris Boreas Greyrat": {
+        "power": 75,
+        "img": "https://qu.ax/ujHhR.jpg",
+        "valor": 50000,
+        "tipo": "ataque"
+      },
+      "Hitogami": {
+        "power": 98,
+        "img": "https://ejemplo.com",
+        "valor": 98000,
+        "tipo": "misterioso"
+      },
+      "Nanahoshi Shizuka": {
+        "power": 60,
+        "img": "https://ejemplo.com",
+        "valor": 30000,
+        "tipo": "misterioso"
+      }
+    },
+    "poder": 233
+  },
+  "51948071058@s.whatsapp.net": {
+    "personajes": {
+      "Orsted": {
+        "power": 100,
+        "img": "https://ejemplo.com",
+        "valor": 100000,
+        "tipo": "magia"
+      }
+    },
+    "poder": 100
+  },
+  "5212431085732@s.whatsapp.net": {
+    "personajes": {
+      "Atofe": {
+        "power": 91,
+        "img": "https://ejemplo.com",
+        "valor": 86000,
+        "tipo": "ataque"
+      },
+      "Badigadi": {
+        "power": 92,
+        "img": "https://ejemplo.com",
+        "valor": 87000,
+        "tipo": "defensa"
+      },
+      "Ruijerd Superdia": {
+        "power": 76,
+        "img": "https://ejemplo.com",
+        "valor": 49000,
+        "tipo": "defensa"
+      }
+    },
+    "poder": 259
+  }
+}
