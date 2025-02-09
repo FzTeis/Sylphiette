@@ -21,10 +21,9 @@ import { es } from "./lib/total-idiomas.js"
 global.botnumber = "";
 global.confirmCode = "";
 global.owner = [
-  ['17146121800', '>\`\` I\'m Sylph ~', true],
+  ['5212431085732', '>\`\` I\'m Sylph ~', true],
   ['5212431268546', '>\` I\'m Fz ~', true],
   ['50242783087', '>\`\`\` I\'m Danny ~ 卐', true],
-  ['5215534215245', 'lancillo el pendejo', true]
 ] //Numeros de owner 
 global.colabs = [
   ['50242783087', '>\`\`\` I\'m Danny ~ 卐', true]
