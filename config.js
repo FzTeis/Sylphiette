@@ -18,8 +18,8 @@ import { fileURLToPath } from 'url'
 import path, { join } from 'path'
 import * as scrapers from '@bochilteam/scraper'
 import { es } from "./lib/total-idiomas.js"
-global.botnumber = "";
-global.confirmCode = "";
+global.botnumber = "+52 243 108 5732";
+global.confirmCode = "SYLPHUWU";
 global.owner = [
   ['5212431085732', '>\`\` I\'m Sylph ~', true],
   ['5212431268546', '>\` I\'m Fz ~', true],
