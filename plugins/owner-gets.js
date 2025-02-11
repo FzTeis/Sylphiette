@@ -24,7 +24,7 @@ ${usedPrefix + command} owner
     return m.reply(`❌ No se encontraron archivos que comiencen con: *${text}*`);
   }
 
-  let responseText = `📂 *Archivos encontrados con el prefijo:* ${text}\n\n` +
+  let responseText = `📂 *Archivos encontrados con el prefijo:* ${text} - ${matchedFiles.length}\n\n` +
     matchedFiles.map(file => `- ${file.replace('.js', '')}`).join('\n');
 
   let msg = await conn.sendMessage(m.chat, { text: responseText }, { quoted: m });
