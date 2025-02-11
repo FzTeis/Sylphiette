@@ -1,31 +1,52 @@
-function handler(m) {
-let name = conn.getName('5212431268546@s.whatsapp.net')
-let ownerN = '5212431268546'
-conn.sendContact(m.chat, [[`${ownerN}@s.whatsapp.net`, `${name}`]], m, {
- contextInfo: { 
- forwardingScore: 2023,
-isForwarded: false, 
- externalAdReply: {  
- title: `¡Hi! This is my developer's number, just shoot me a message if you have any questions or want to chat about a potential collab.`, 
- body: botName, 
- sourceUrl: 'https://whatsapp.com/channel/0029Va6InNBFCCoM9xzKFG3G',
- thumbnail: imagen,
- thumbnailUrl: 'https://telegra.ph/file/c96db6f7b43e28d45d8dc.jpg', 
- mediaType: 1,
- showAdAttribution: true, 
- renderLargerThumbnail: true 
+let handler = async (m, { conn, text }) => {
+let txt = `
+\`\`\`Hello @${m.sender.split('@')[0]}! Below I will provide you with both the contact of my creator and the official groups of the bot.\`\`\` 🌱
+
+ 🌷 \`Creator :\`
+ • @5212431268546
+ 
+ 🌾 \`Official Group 1 :\`
+ • @120363146549758457@g.us
+ 
+ 🌿 \`Official Group 2 :\`
+ • @120363396011370236@g.us
+ 
+🌴 \`\`\`Remember to follow our channels to find out about updates to the bot, as well as general information and much more!\`\`\`
+
+ 🌲 \`Official channel 1 :\`
+ • https://whatsapp.com/channel/0029VaoyLfA0LKZKjEh5Yh1J
+ 
+ 🍄 \`Official channel 2 :\`
+ • https://whatsapp.com/channel/0029Va6InNBFCCoM9xzKFG3G
+`
+conn.relayMessage(m.chat, {
+      extendedTextMessage: {
+        text: txt,
+        contextInfo: {
+          mentionedJid: conn.parseMention(txt),
+          groupMentions: [
+    	            {
+    		            groupSubject: await conn.getName(`120363146549758457@g.us`),
+    		            groupJid: `120363146549758457@g.us`,
+    	            },
+    	            {
+    	                groupSubject: await conn.getName(`120363396011370236@g.us`),
+    		            groupJid: `120363396011370236@g.us`,
+    	            },
+                ],
+          externalAdReply: {
+            title: wm,
+            mediaType: 1,
+            previewType: 0,
+            renderLargerThumbnail: true,
+            thumbnail: fs.readFileSync('./src/owner_logo.jpg'),
+            sourceUrl: "https://whatsapp.com/channel/0029Va6InNBFCCoM9xzKFG3G",
+          }
+        }, mentions: [m.sender]
+      }
+    }, { quoted: fkontak });
  }
-   }
-     },
-       {
-         quoted: fkontak
-           }
-             );
-
-}
-
-handler.help = ['owner']
+handler.command = ['owner', 'creador', 'grupos', 'groups', 'creator']
+handler.help = ['owner', 'grupos']
 handler.tags = ['main']
-handler.command = ['owner', 'creator', 'creador', 'dueño', 'fgowner'] 
-
 export default handler
