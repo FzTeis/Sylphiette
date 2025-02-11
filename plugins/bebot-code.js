@@ -1,4 +1,4 @@
-const {
+/*const {
     useMultiFileAuthState,
     DisconnectReason,
     fetchLatestBaileysVersion, 
@@ -184,4 +184,4 @@ export default handler
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-}
+}*/
