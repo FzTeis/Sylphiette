@@ -11,10 +11,10 @@ console.log()
 global.conns = []
 }
 let handler = async (m, { conn, args, usedPrefix, command, isOwner, isPrems, isROwner }) => {
-/*if (!global.db.data.settings[conn.user.jid].jadibotmd && !isROwner) {
+if (!global.db.data.settings[conn.user.jid].jadibotmd && !isROwner) {
 conn.reply(m.chat, '🚩 Este Comando está deshabilitado por mi creador.', m, rpl)
 return
-}*/
+}
 let parentw = args[0] && args[0] == "plz" ? conn : await global.conn
 if (!(args[0] && args[0] == 'plz' || (await global.conn).user.jid == conn.user.jid)) {
 return conn.reply(m.chat, `*\`「 🌱 」Solo puedes usar este comando en el bot principal.\n\n• Wa.me/${global.conn.user.jid.split`@`[0]}?text=${usedPrefix + command}\`*`, m, rpl)
