@@ -24,6 +24,7 @@ global.owner = [
   ['5212431085732', '>\`\` I\'m Sylph ~', true],
   ['5212431268546', '>\` I\'m Fz ~', true],
   ['50242783087', '>\`\`\` I\'m Danny ~ 卐', true],
+  ['5215534215245', '🍆🍆', true],
 ] //Numeros de owner 
 global.colabs = [
   ['50242783087', '>\`\`\` I\'m Danny ~ 卐', true]
