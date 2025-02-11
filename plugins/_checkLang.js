@@ -15,5 +15,7 @@ export async function before(m,{ conn }) {
      }
 
 	global.mssg = translations
-	
+if (m.fromMe) {
+return
+}
 }
