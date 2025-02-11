@@ -1,4 +1,4 @@
-import fs from "fs"
+/*import fs from "fs"
 let handler = async (m, { conn, usedPrefix }) => {
     
     let session = m.sender.split('@')[0]
@@ -14,4 +14,4 @@ handler.tags = ['bebot']
 handler.command = ['getcode']
 handler.owner = true
 
-export default handler
+export default handler*/
