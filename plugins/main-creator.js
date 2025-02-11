@@ -39,7 +39,7 @@ conn.relayMessage(m.chat, {
             mediaType: 1,
             previewType: 0,
             renderLargerThumbnail: true,
-            thumbnail: fs.readFileSync('./src/owner_logo.jpg'),
+            thumbnail: fs.readFileSync('./src/menu_logo.jpg'),
             sourceUrl: "https://whatsapp.com/channel/0029Va6InNBFCCoM9xzKFG3G",
           }
         }, mentions: [m.sender]
