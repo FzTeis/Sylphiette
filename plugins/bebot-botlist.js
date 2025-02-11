@@ -1,4 +1,4 @@
-import ws from 'ws';
+/*import ws from 'ws';
 async function handler(m, { usedPrefix }) {
 
 const users = [...new Set([...global.conns.filter((conn) => conn.user && conn.ws.socket && conn.ws.socket.readyState !== ws.CLOSED).map((conn) => conn)])];
@@ -47,4 +47,4 @@ handler.help = ['botlist']
 handler.tags = ['bebot']
 handler.command = ['listbot', 'listbots', 'bots', 'bebots', 'botlist'] 
 
-export default handler
+export default handler*/
