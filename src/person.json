@@ -1,0 +1,213 @@
+{
+  "Rudeus Greyrat": {
+    "tipo": "magia",
+    "rareza": "legendario",
+    "img": [
+      "https://qu.ax/QsNAP.jpg"
+    ],
+    "usser": "5212431268546",
+    "status": true,
+    "ataques": {
+      "Magia de agua": 50,
+      "Magia de fuego": 55,
+      "Explosión mágica": 70
+    },
+    "valor": 85000,
+    "poder": 90
+  },
+  "Eris Boreas Greyrat": {
+    "tipo": "ataque",
+    "rareza": "épico",
+    "img": [
+      "https://qu.ax/ujHhR.jpg"
+    ],
+    "usser": "8617178583493",
+    "status": true,
+    "ataques": {
+      "Corte veloz": 40,
+      "Torbellino de espadas": 45
+    },
+    "valor": 50000,
+    "poder": 75
+  },
+  "Roxy Migurdia": {
+    "tipo": "magia",
+    "rareza": "épico",
+    "img": [
+      "https://qu.ax/ZWxzW.jpg"
+    ],
+    "usser": "5212431268546",
+    "status": true,
+    "ataques": {
+      "Magia de agua": 35,
+      "Congelación": 42
+    },
+    "valor": 48000,
+    "poder": 70
+  },
+  "Sylphiette": {
+    "tipo": "soporte",
+    "rareza": "raro",
+    "img": [
+      "https://ejemplo.com"
+    ],
+    "usser": "5217774800345",
+    "status": true,
+    "ataques": {
+      "Sanación básica": 20,
+      "Viento curativo": 25
+    },
+    "valor": 25000,
+    "poder": 50
+  },
+  "Paul Greyrat": {
+    "tipo": "ataque",
+    "rareza": "raro",
+    "img": [
+      "https://ejemplo.com"
+    ],
+    "usser": "5212431268546",
+    "status": true,
+    "ataques": {
+      "Estocada precisa": 30,
+      "Doble corte": 35
+    },
+    "valor": 28000,
+    "poder": 55
+  },
+  "Zenith Greyrat": {
+    "tipo": "soporte",
+    "rareza": "raro",
+    "img": [
+      "https://ejemplo.com"
+    ],
+    "usser": "584120515006",
+    "status": true,
+    "ataques": {
+      "Sanación avanzada": 30,
+      "Barrera mágica": 28
+    },
+    "valor": 26000,
+    "poder": 52
+  },
+  "Lilia": {
+    "tipo": "soporte",
+    "rareza": "común",
+    "img": [
+      "https://ejemplo.com"
+    ],
+    "usser": "5212431268546",
+    "status": true,
+    "ataques": {
+      "Primeros auxilios": 10,
+      "Refuerzo físico": 12
+    },
+    "valor": 12000,
+    "poder": 30
+  },
+  "Ghislaine Dedoldia": {
+    "tipo": "ataque",
+    "rareza": "épico",
+    "img": [
+      "https://ejemplo.com"
+    ],
+    "usser": "584120515006",
+    "status": true,
+    "ataques": {
+      "Corte bestial": 45,
+      "Golpe del lobo": 50
+    },
+    "valor": 52000,
+    "poder": 78
+  },
+  "Orsted": {
+    "tipo": "magia",
+    "rareza": "mítico",
+    "img": [
+      "https://ejemplo.com"
+    ],
+    "usser": "51948071058",
+    "status": true,
+    "ataques": {
+      "Explosión dracónica": 80,
+      "Rayo divino": 85
+    },
+    "valor": 100000,
+    "poder": 100
+  },
+  "Hitogami": {
+    "tipo": "misterioso",
+    "rareza": "mítico",
+    "img": [
+      "https://ejemplo.com"
+    ],
+    "usser": "8617178583493",
+    "status": true,
+    "ataques": {
+      "Manipulación mental": 75,
+      "Ilusión eterna": 80
+    },
+    "valor": 98000,
+    "poder": 98
+  },
+  "Ruijerd Superdia": {
+    "tipo": "defensa",
+    "rareza": "épico",
+    "img": [
+      "https://ejemplo.com"
+    ],
+    "usser": "5212431085732",
+    "status": true,
+    "ataques": {
+      "Escudo impenetrable": 40,
+      "Contraataque brutal": 50
+    },
+    "valor": 49000,
+    "poder": 76
+  },
+  "Nanahoshi Shizuka": {
+    "tipo": "misterioso",
+    "rareza": "raro",
+    "img": [
+      "https://ejemplo.com"
+    ],
+    "usser": "8617178583493",
+    "status": true,
+    "ataques": {
+      "Invocación dimensional": 35,
+      "Portal vacío": 38
+    },
+    "valor": 30000,
+    "poder": 60
+  },
+  "Badigadi": {
+    "tipo": "defensa",
+    "rareza": "legendario",
+    "img": [
+      "https://ejemplo.com"
+    ],
+    "usser": "5212431085732",
+    "status": true,
+    "ataques": {
+      "Regeneración oscura": 70,
+      "Golpe titánico": 75
+    },
+    "valor": 87000,
+    "poder": 92
+  },
+  "Atofe": {
+    "tipo": "ataque",
+    "rareza": "legendario",
+    "img": [
+      "https://ejemplo.com"
+    ],
+    "usser": "5212431085732",
+    "status": true,
+    "ataques": {
+      "Golpe infernal": 65,
+      "Ira demoníaca": 72
+    },
+    "valor": 86000,
+    "poder": 91
+  }
+}
