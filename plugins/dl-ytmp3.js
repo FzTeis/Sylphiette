@@ -12,7 +12,7 @@ let handler = async(m, { conn, text, args }) => {
     try {
         m.react('⏳');        
         const search = await yts(args[0]); 
-        let isDoc = /--doc$/.test(text);
+        let isDoc = /--doc|doc$/.test(text);
         const video = search.videos[0];       
         if (!video.url) return conn.reply(m.chat, `No se encontró el video.`, m);
         const mp3Response = await (await fetch(`https://api.vreden.my.id/api/ytmp3?url=${video.url}`)).json();
@@ -35,16 +35,15 @@ let handler = async(m, { conn, text, args }) => {
 \`\`\`
 ≡ Enviado como : ${isDoc ? "Documento" : "Audio"}
 `;
-        conn.sendFile(m.chat, file.path, `${video.title}.mp3`, cap, m, {
+        conn.sendFile(m.chat, file.path, `${video.title}.mp3`, cap, m, null, {
             asDocument: isDoc ? true : false,
-            mimetype: "audio/mpeg",
-            APIC: await (await fetch(video.thumbnail)).buffer()
+            mimetype: "audio/mpeg"
         });
 await fs.promises.unlink(file.path)
         m.react('✅');
     } catch (error) {
         console.error(error); 
-        return conn.reply(m.chat, `❌ Error al descargar el audio.\n\n` + error, m);
+        return conn.reply(m.chat, `Error al descargar el audio.\n\n` + error, m);
     }
 };
 
