@@ -385,6 +385,9 @@ export async function handler(chatUpdate) {
                     this.reply(m.chat, `✳️ nivel requerido ${plugin.level} para usar este comando. \nTu nivel ${_user.level}`, m)
                     continue // If the level has not been reached
                 }
+                if (m.fromMe) {
+                continue
+                }
                 let extra = {
                     match,
                     usedPrefix,
