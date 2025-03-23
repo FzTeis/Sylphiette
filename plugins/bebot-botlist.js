@@ -1,5 +1,5 @@
 import ws from 'ws';
-async function handler(m, { usedPrefix }) {
+let handler = async(m, { usedPrefix, conn, text }) => {
 const limit = 20
 const users = [...new Set([...global.conns.filter((conn) => conn.user && conn.ws.socket && conn.ws.socket.readyState !== ws.CLOSED).map((conn) => conn)])];
 
@@ -49,7 +49,6 @@ const cap = `
 
 ≡ 🌱 Sesiones guardadas : ${await info("./Sesiones/Subbots")}
 ≡ 🌺 Sesiones Activas : ${totalUsers || '0'}
-
 
 ${replyMessage.trim()}
  
