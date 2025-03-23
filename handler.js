@@ -207,7 +207,7 @@ export async function handler(chatUpdate) {
         let _user = global.db.data && global.db.data.users && global.db.data.users[m.sender]
 
         const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
-        const isOwner = isROwner || m.fromMe
+        const isOwner = isROwner
         const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender) || _user.prem == true
 
@@ -385,7 +385,7 @@ export async function handler(chatUpdate) {
                     this.reply(m.chat, `✳️ nivel requerido ${plugin.level} para usar este comando. \nTu nivel ${_user.level}`, m)
                     continue // If the level has not been reached
                 }
-                if (m.fromMe) {
+                if (m.isBaileys) {
                 continue
                 }
                 let extra = {
