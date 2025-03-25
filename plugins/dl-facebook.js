@@ -5,14 +5,17 @@ let handler = async (m, { conn, usedPrefix, command, args }) => {
         if (!args[0].match(/(?:https?:\/\/(web\.|www\.|m\.)?(facebook|fb)\.(com|watch)\S+)?$/)) {
             return m.reply("Enlace inválido. Asegúrate de que sea un enlace de Facebook válido.");
         }
-
-        m.react('🕒');
-        let fb = await aio(args[0]);
-        if (!fb.medias[0]) {
-            return m.reply("No se pudo obtener el video. Puede que el enlace no sea público o esté restringido.");
-        }
-        conn.sendFile(m.chat, fb.medias[0].url, `video.mp4`, `🌷 \`Calidad :\` ${fb.medias[0].quality}\n🌳 \`Peso :\` ${fb.medias[0].formattedSize}`, m);
-        
+let isPrem = global.db.data.users[m.sender].premium
+m.react('🕒');
+let fb = await aio(args[0]);
+if (!fb.medias[0]) {
+return m.reply("No se pudo obtener el video. Puede que el enlace no sea público o esté restringido.");
+}
+if (fb.medias[1] && isPrem) {
+conn.sendFile(m.chat, fb.medias[1].url, `video.mp4`, `🌷 \`Calidad :\` ${fb.medias[1].quality}\n🌳 \`Peso :\` ${fb.medias[1].formattedSize}`, m);
+} else {
+conn.sendFile(m.chat, fb.medias[0].url, `video.mp4`, `🌷 \`Calidad :\` ${fb.medias[0].quality}\n🌳 \`Peso :\` ${fb.medias[0].formattedSize}`, m);
+}
     } catch (e) {
         return conn.reply(m.chat, `Error al descargar el video:\n${e.message}`, m);
     }
