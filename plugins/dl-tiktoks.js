@@ -1,61 +1,3 @@
-import * as baileys from "@whiskeysockets/baileys";
-import axios from "axios";
-
-async function sendAlbum(jid, medias, options = {}) {
-  if (typeof jid !== "string") {
-    throw new TypeError(`jid must be string, received: ${jid} (${jid?.constructor?.name})`);
-  }
-  for (const media of medias) {
-    if (!media.type || (media.type !== "image" && media.type !== "video")) {
-      throw new TypeError(`media.type must be "image" or "video", received: ${media.type} (${media.type?.constructor?.name})`);
-    }
-    if (!media.data || (!media.data.url && !Buffer.isBuffer(media.data))) {
-      throw new TypeError(`media.data must be object with url or buffer, received: ${media.data} (${media.data?.constructor?.name})`);
-    }
-  }
-  if (medias.length < 2) {
-    throw new RangeError("Minimum 2 media");
-  }
-  const delay = !isNaN(options.delay) ? options.delay : 500;
-  delete options.delay;
-  const album = baileys.generateWAMessageFromContent(
-    jid,
-    {
-      messageContextInfo: {},
-      albumMessage: {
-        expectedImageCount: medias.filter(media => media.type === "image").length,
-        expectedVideoCount: medias.filter(media => media.type === "video").length,
-        ...(options.quoted
-          ? {
-              contextInfo: {
-                remoteJid: options.quoted.key.remoteJid,
-                fromMe: options.quoted.key.fromMe,
-                stanzaId: options.quoted.key.id,
-                participant: options.quoted.key.participant || options.quoted.key.remoteJid,
-                quotedMessage: options.quoted.message,
-              },
-            }
-          : {}),
-      },
-    },
-    {}
-  );
-  await conn.relayMessage(album.key.remoteJid, album.message, { messageId: album.key.id });
-  for (let i = 0; i < medias.length; i++) {
-    const { type, data, caption } = medias[i];
-    const message = await baileys.generateWAMessage(
-      album.key.remoteJid,
-      { [type]: data, caption: caption || "" },
-      { upload: conn.waUploadToServer }
-    );
-    message.message.messageContextInfo = {
-      messageAssociation: { associationType: 1, parentMessageKey: album.key },
-    };
-    await conn.relayMessage(message.key.remoteJid, message.message, { messageId: message.key.id });
-    await baileys.delay(delay);
-  }
-  return album;
-}
 const handler = async (m, { conn, text, usedPrefix, command }) => {
   try {
     if (!text) {
@@ -79,7 +21,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
         ? cap 
         : `🌷 \`Title\` : ${video.title}\n🍟 \`Process\` : ${((new Date() - old) * 1)} ms`
     }));
-    await sendAlbum(m.chat, medias, { quoted: m });
+    await conn.sendSylphy(m.chat, medias, { quoted: m });
     m.react('✅');
   } catch (e) {
     return conn.reply(m.chat, `Ocurrió un problema al obtener los videos:\n\n` + e, m);
