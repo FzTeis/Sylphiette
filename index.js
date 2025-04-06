@@ -12,6 +12,7 @@ import chalk from 'chalk'
 import path from 'path'
 import os from 'os'
 import { promises as fsPromises } from 'fs'
+import fs from "fs";
 
 // https://stackoverflow.com/a/50052194
 const __dirname = dirname(fileURLToPath(import.meta.url))
