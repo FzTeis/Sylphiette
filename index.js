@@ -42,6 +42,11 @@ async function ensureTmpFolder() {
     console.error('Ocurrió un error al verificar o crear la carpeta "tmp":', error);
   }
 }
+//-----
+if (!fs.existsSync(jadi)) {
+  fs.mkdirSync(jadi, { recursive: true });
+}
+//----
 
 async function start(file) {
   if (isRunning) return
