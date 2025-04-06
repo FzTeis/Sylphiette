@@ -44,7 +44,7 @@ async function ensureTmpFolder() {
   }
 }
 //-----
-if (!fs.existsSync(jadi)) {
+if (!fs.existsSync(global.jadi)) {
   fs.mkdirSync(jadi, { recursive: true });
 }
 //----
