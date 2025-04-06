@@ -1,12 +1,17 @@
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '1'
-import './config.js';
-import './api.js';
+
+import './config.js'
+import './api.js'
 import { createRequire } from 'module'
 import path, { join } from 'path'
-import {fileURLToPath, pathToFileURL} from 'url'
+import { fileURLToPath, pathToFileURL } from 'url'
 import { platform } from 'process'
 import * as ws from 'ws'
-import fs, { watchFile, unwatchFile, writeFileSync, readdirSync, statSync, unlinkSync, existsSync, readFileSync, copyFileSync, watch, rmSync, readdir, stat, mkdirSync, rename, writeFile } from 'fs'
+import fs, {
+  watchFile, unwatchFile, writeFileSync, readdirSync, statSync, unlinkSync,
+  existsSync, readFileSync, copyFileSync, watch, rmSync, readdir, stat,
+  mkdirSync, rename, writeFile
+} from 'fs'
 import yargs from 'yargs'
 import { spawn } from 'child_process'
 import lodash from 'lodash'
@@ -19,7 +24,7 @@ import pino from 'pino'
 import Pino from 'pino'
 import { Boom } from '@hapi/boom'
 import { makeWASocket, protoType, serialize } from './lib/simple.js'
-import {Low, JSONFile} from 'lowdb'
+import { Low, JSONFile } from 'lowdb'
 import { mongoDB, mongoDBV2 } from './lib/mongoDB.js'
 import store from './lib/store.js'
 import readline from 'readline'
@@ -27,20 +32,32 @@ import NodeCache from 'node-cache'
 import pkg from 'google-libphonenumber'
 const { PhoneNumberUtil } = pkg
 const phoneUtil = PhoneNumberUtil.getInstance()
-const { makeInMemoryStore, DisconnectReason, useMultiFileAuthState, MessageRetryMap, fetchLatestBaileysVersion, makeCacheableSignalKeyStore } = await import('@whiskeysockets/baileys')
+const {
+  makeInMemoryStore, DisconnectReason, useMultiFileAuthState,
+  MessageRetryMap, fetchLatestBaileysVersion, makeCacheableSignalKeyStore
+} = await import('@whiskeysockets/baileys')
 const { CONNECTING } = ws
 const { chain } = lodash
 const PORT = process.env.PORT || process.env.SERVER_PORT || 3000
-protoType();
-serialize();
 
-global.__filename = function filename(pathURL = import.meta.url, rmPrefix = platform !== 'win32') {
-  return rmPrefix ? /file:\/\/\//.test(pathURL) ? fileURLToPath(pathURL) : pathURL : pathToFileURL(pathURL).toString();
-}; global.__dirname = function dirname(pathURL) {
-  return path.dirname(global.__filename(pathURL, true));
-}; global.__require = function require(dir = import.meta.url) {
-  return createRequire(dir);
-};
+protoType()
+serialize()
+
+global.__filename = (pathURL = import.meta.url, rmPrefix = platform !== 'win32') => {
+  if (rmPrefix) {
+    return /^file:\/\//.test(pathURL) ? fileURLToPath(pathURL) : pathURL
+  } else {
+    return pathToFileURL(pathURL).toString()
+  }
+}
+
+global.__dirname = (pathURL) => {
+  return path.dirname(global.__filename(pathURL, true))
+}
+
+global.__require = (dir = import.meta.url) => {
+  return createRequire(dir)
+}
 
 global.API = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({...query, ...(apikeyqueryname ? {[apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name]} : {})})) : '');
 
