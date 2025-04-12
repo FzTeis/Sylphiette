@@ -2,7 +2,7 @@ import { areJidsSameUser } from '@whiskeysockets/baileys'
 export async function before(m, { participants, conn }) {
     if (m.isGroup) {
         let chat = global.db.data.chats[m.chat];
-        let botJid = global.conn.user.jid /
+        let botJid = global.conn.user.jid 
        if (botJid === conn.user.jid) {
            return
         } else {
