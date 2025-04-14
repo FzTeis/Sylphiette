@@ -199,7 +199,7 @@ export async function handler(chatUpdate) {
         }
         if (opts['nyimak'])  return
 const isOwr = global.owner.some(([id]) => id && m.sender.includes(id))
-if (!m.fromMe && global.db.data.users[m.sender].public && !isOwr) return
+if (!m.fromMe && settings.self && !isOwr) return
 
         //if (!m.fromMe && opts['self'])  return
       //  if (settings.solopv && m.chat.endsWith('g.us')) return  
