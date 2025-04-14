@@ -1,5 +1,16 @@
+import ws from 'ws';
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 
+const users = [
+  ...new Set(
+    global.conns.filter(conn =>
+      conn.user &&
+      conn.ws?.socket &&
+      conn.ws.socket.readyState !== ws.CLOSED
+    )
+  )
+];
+let isSubbot = users.some(conn => conn.user?.jid === m.sender);
   let isEnable = /true|enable|(turn)?on|1/i.test(command)
   let chat = global.db.data.chats[m.chat]
   let xx = '```'
@@ -67,11 +78,12 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     case 'public':
     case 'publico':
       isAll = true
-      if (!isROwner) {
-        global.dfail('rowner', m, conn)
+      if (!isSubbot) {
+        m.reply(`🌱 Comando solo disponible para subbots.`)
         throw false
       }
-      global.opts['self'] = !isEnable
+      bot.public = !isEnable
+     // global.opts['self'] = !isEnable
       break
     case 'antilink':
     case 'antilinkwa':
@@ -165,7 +177,8 @@ break
     default:
       //if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage, { quoted: m })
       if (!/[01]/.test(command)) return m.reply(`
-☁️ \`໋≡ Lista de Opciones:\`
+☁️ \`໋≡ Lista de Opciones :\`
+
   乂 *ＡＤＭＩＮ*
 ${xx} -------------------------
  • captcha
@@ -183,10 +196,13 @@ ${xx} -------------------------
 ${xx}
   乂 *ＯＷＮＥＲ*
  ${xx}-------------------------
- • public
  • modoia
  • solopv
  • sologp
+${xx}
+  乂 *S U B  -  B O T S*
+ ${xx}-------------------------
+ • public
 ${xx}
 *📌 Ｅｊｅｍｐｌｏ :*
 *${usedPrefix}on* ${xx}welcome${xx}
