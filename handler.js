@@ -195,7 +195,10 @@ export async function handler(chatUpdate) {
             console.error(e)
         }
         if (opts['nyimak'])  return
-        if (!m.fromMe && opts['self'])  return
+const isOwr = global.owner.some(([id]) => id && m.sender.includes(id))
+if (!m.fromMe && opts['self'] && !isOwr) return
+
+        //if (!m.fromMe && opts['self'])  return
       //  if (settings.solopv && m.chat.endsWith('g.us')) return  
         //if (settings.sologp && !m.chat.endsWith('g.us')) return
         if (settings.sologp && !m.chat.endsWith('g.us') && !/jadibot|bebot|getcode|serbot|bots|stop|support|donate|off|on|grupos|s|code|newcode|join/gim.test(m.text)) return 
