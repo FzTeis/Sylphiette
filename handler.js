@@ -94,6 +94,8 @@ export async function handler(chatUpdate) {
                     user.language = 'es'
                 if (!('prem' in user))
                     user.prem = false
+                if (!('public' in user))
+                    user.public = true
                 if (!user.premiumTime) 
                     user.premiumTime = 0
             } else
@@ -118,6 +120,7 @@ export async function handler(chatUpdate) {
                     genero: 'Indeciso',
                     language: 'es',
                     prem: false,
+                    public: true,
                     premiumTime: 0,
                 }
             let chat = global.db.data.chats[m.chat]
@@ -196,7 +199,7 @@ export async function handler(chatUpdate) {
         }
         if (opts['nyimak'])  return
 const isOwr = global.owner.some(([id]) => id && m.sender.includes(id))
-if (!m.fromMe && opts['self'] && !isOwr) return
+if (!m.fromMe && global.db.data.users[m.sender].public && !isOwr) return
 
         //if (!m.fromMe && opts['self'])  return
       //  if (settings.solopv && m.chat.endsWith('g.us')) return  
