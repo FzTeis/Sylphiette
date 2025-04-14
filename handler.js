@@ -95,7 +95,7 @@ export async function handler(chatUpdate) {
                 if (!('prem' in user))
                     user.prem = false
                 if (!('public' in user))
-                    user.public = true
+                    user.public = false
                 if (!user.premiumTime) 
                     user.premiumTime = 0
             } else
@@ -120,7 +120,7 @@ export async function handler(chatUpdate) {
                     genero: 'Indeciso',
                     language: 'es',
                     prem: false,
-                    public: true,
+                    public: false,
                     premiumTime: 0,
                 }
             let chat = global.db.data.chats[m.chat]
