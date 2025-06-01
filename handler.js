@@ -178,38 +178,24 @@ const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([num
         if (m.isBaileys)
             return
         m.exp += Math.ceil(Math.random() * 10)
-
         let usedPrefix
         let _user = global.db.data && global.db.data.users && global.db.data.users[m.chat][m.sender]
-
         const groupMetadata = (m.isGroup ? ((conn.chats[m.chat] || {}).metadata || await this.groupMetadata(m.chat).catch(_ => null)) : {}) || {}
         const participants = (m.isGroup ? groupMetadata.participants : []) || []
-      
- const normalizeJid = jid => jid?.replace(/[^0-9]/g, '')
-
-// Limpiar correctamente los números del bot (quita los sufijos como ":89" antes de normalizar)
+const normalizeJid = jid => jid?.replace(/[^0-9]/g, '')
 const cleanJid = jid => jid?.split(':')[0] || ''
-
 const senderNum = normalizeJid(m.sender)
 const botNums = [this.user.jid, this.user.lid].map(j => normalizeJid(cleanJid(j)))
-
 const user = m.isGroup 
   ? participants.find(u => normalizeJid(u.id) === senderNum) 
   : {}
-
 const bot = m.isGroup 
   ? participants.find(u => botNums.includes(normalizeJid(u.id))) 
   : {}
-
 const isRAdmin = user?.admin === 'superadmin'
 const isAdmin = isRAdmin || user?.admin === 'admin'
 const isBotAdmin = !!bot?.admin      
-        /*const user = (m.isGroup ? participants.find(u => conn.decodeJid(u.id) === m.sender) : {}) || {} // User Data
-        const bot = (m.isGroup ? participants.find(u => conn.decodeJid(u.id) == this.user.jid || this.user.lid) : {}) || {} // Your Data
-        const isRAdmin = user?.admin == 'superadmin' || false
-        const isAdmin = isRAdmin || user?.admin == 'admin' || false // Is User Admin?
-        const isBotAdmin = bot?.admin || false // Are you Admin?
-*/
+
         const ___dirname = path.join(path.dirname(fileURLToPath(import.meta.url)), './plugins')
         for (let name in global.plugins) {
             let plugin = global.plugins[name]
