@@ -21,12 +21,14 @@
   </a>
   
 ### **`🖥️ Akirax - Host :`**
-<a href="https://home.akirax.net"><img src="https://files.catbox.moe/1lmwog.jpeg" height="130px"></a>
+<a href="https://home.akirax.net"><img src="https://files.catbox.moe/1lmwog.jpeg" height="120px"></a>
 
 <details>
  <summary><b>Click Here</b></summary>
+  
 - **Panel:** [`Aquí`](https://console.akirax.net)
 - **Dashboard:** [`Aquí`](https://home.akirax.net)
+  
 </details>
 
 `Sylphiette Powered by I'm Fz ~`
