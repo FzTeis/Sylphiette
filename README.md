@@ -19,13 +19,14 @@
 ### `¿Dudas? ¡Contáctame!`
 <a href="http://wa.me/522431268546" target="blank"><img src="https://img.shields.io/badge/FzTeis-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
   </a>
+  
 ### **`🖥️ Akirax - Host :`**
 <a href="https://home.akirax.net"><img src="https://files.catbox.moe/1lmwog.jpeg" height="130px"></a>
 
 <details>
  <summary><b>Click Here</b></summary>
-
 - **Panel:** [`Aquí`](https://console.akirax.net)
 - **Dashboard:** [`Aquí`](https://home.akirax.net)
 </details>
+
 `Sylphiette Powered by I'm Fz ~`
