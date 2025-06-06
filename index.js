@@ -1,3 +1,4 @@
+console.clear()
 console.log('✅ Iniciando...')
 
 import { join, dirname } from 'path'
