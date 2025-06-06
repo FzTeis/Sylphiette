@@ -10,7 +10,7 @@
     "plugins": "plugins"
   },
   "scripts": {
-    "start": "node --expose-gc index.js",
+    "start": "node index.js",
     "test": "node test.js"
   },
   "keywords": [
@@ -39,7 +39,7 @@
     "@google/generative-ai": "^0.24.1",
     "@green-code/music-track-data": "^2.0.3",
     "@octokit/rest": "^21.1.1",
-    "@whiskeysockets/baileys": "github:nstar-y/baileys",
+    "@whiskeysockets/baileys": "npm:@baileys-md/stable",
     "acrcloud": "^1.4.0",
     "api-dylux": "^1.8.5",
     "aptoide-scraper": "^1.0.1",
