@@ -78,7 +78,7 @@
     "pornhub.js": "^1.13.2",
     "qrcode": "^1.5.1",
     "qs": "^6.13.0",
-    "sharp": "^0.32.6",
+    "sharp": "^0.34.1",
     "socket.io": "^4.5.2",
     "song-lyrics-api": "^1.1.0",
     "syntax-error": "^1.4.0",
