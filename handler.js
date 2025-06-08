@@ -74,6 +74,8 @@ if (typeof user !== 'object') {
                     chat.delete = true
                 if (!('antiLink' in chat))
                     chat.antiLink = false
+                if (!('antiLinkAll' in chat))
+                    chat.antiLinkAll = false
                 if (!('viewonce' in chat))
                     chat.viewonce = false
                 if (!('onlyAdmin' in chat))
@@ -99,6 +101,7 @@ if (typeof user !== 'object') {
                     sDemote: '',
                     delete: true,
                     antiLink: false,
+                    antiLinkAll: false,
                     viewonce: false,
                     useDocument: true,
                     onlyAdmin: false,
