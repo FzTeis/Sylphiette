@@ -31,4 +31,17 @@
   
 </details>
 
+[![Logo BoxMineWorld](https://boxmineworld.com/img/Logo.png)](https://boxmineworld.com)
+
+<details>
+  <summary><b>:paperclip: Enlaces Importantes</b></summary>
+
+- **Sitio Web:** [https://boxmineworld.com](https://boxmineworld.com)  
+- **Área de Clientes:** [https://dash.boxmineworld.com](https://dash.boxmineworld.com)  
+- **Panel de Control:** [https://panel.boxmineworld.com](https://panel.boxmineworld.com)  
+- **Documentación:** [https://docs.boxmineworld.com](https://docs.boxmineworld.com)  
+- **Comunidad de Discord:** [¡Únete aquí!](https://discord.gg/84qsr4v)
+
+</details>
+
 `Sylphiette Powered by I'm Fz ~`
