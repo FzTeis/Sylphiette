@@ -136,14 +136,14 @@ const chat = global.db.data.chats[m.chat] || {}
 const gpmt = (m.isGroup ? ((conn.chats[m.chat] || {}).metadata || await this.groupMetadata(m.chat).catch(_ => null)) : {}) || {}
 const parts = (m.isGroup ? gpmt.participants : []) || []
 const cle = jid => jid?.split(':')[0] || ''
-const normm = jid => jid.replace(/[^0-9]/g, '')
+const normm = jid => jid?.replace(/[^0-9]/g, '')
 const sender = normm(m.sender)
-const usr = parts?.find(u => normm(u.id) === sender)
+const usr = m.isGroup ? parts.find(u => normm(u.id) === sender) : {}
 const isRA = usr?.admin === 'superadmin'
 const isA = isRA || usr?.admin === 'admin'
-        
-   if (!m.isGroup && chat.onlyAdmin && !isA) 
-           return
+
+if (m.isGroup && chat.onlyAdmin && !isA) 
+  return
         
 const mainBot = global.conn.user.jid
 const isSubbs = chat.antiLag === true
