@@ -6,7 +6,7 @@ export async function before(m, { conn, isAdmin, isBotAdmin }) {
     if (!m.isGroup) return !1;
 
     let chat = global.db?.data?.chats?.[m.chat];
-    if (!chat || !chat.antilinkall) return !0;
+    if (!chat || !chat.antiLinkAll) return !0;
 
     let containsLink = anyLinkRegex.test(m.text);
 
