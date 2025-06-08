@@ -87,6 +87,16 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       chat.antiLink = isEnable
       break
+      case 'modoadmin':
+      case 'onlyadmin':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.onlyAdmin = isEnable
+      break
     case 'restrict':
     case 'restringir':
       isAll = true
@@ -144,6 +154,7 @@ case 'noprefix':
  • detect 
  • antilag
  • document
+ • onlyadmin
  
   乂 *ＯＷＮＥＲ*
 -------------------------
