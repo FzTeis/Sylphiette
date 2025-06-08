@@ -145,7 +145,7 @@ const usr = m.isGroup ? parts.find(u => normm(u.id) === sender) : {}
 const isRA = usr?.admin === 'superadmin'
 const isA = isRA || usr?.admin === 'admin'
 
-if (m.isGroup && chat.onlyAdmin && !isA) 
+if (m.isGroup && chat.onlyAdmin && !isA && !(chat.antiLink || chat.antiLinkAll))
   return
         
 const mainBot = global.conn.user.jid
