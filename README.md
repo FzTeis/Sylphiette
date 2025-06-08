@@ -21,7 +21,7 @@
   </a>
   
 ### **`🖥️ Akirax - Host :`**
-<a href="https://home.akirax.net"><img src="https://files.catbox.moe/1lmwog.jpeg" height="120px"></a>
+<a href="https://home.akirax.net"><img src="https://files.catbox.moe/1lmwog.jpeg" height="350px"></a>
 
 <details>
  <summary><b>Click Here</b></summary>
@@ -31,10 +31,11 @@
   
 </details>
 
+### **`📦 Boxmine World :`**
 [![Logo BoxMineWorld](https://boxmineworld.com/img/Logo.png)](https://boxmineworld.com)
 
 <details>
-  <summary><b>:paperclip: Enlaces Importantes</b></summary>
+  <summary><b>Click Here</b></summary>
 
 - **Sitio Web:** [https://boxmineworld.com](https://boxmineworld.com)  
 - **Área de Clientes:** [https://dash.boxmineworld.com](https://dash.boxmineworld.com)  
