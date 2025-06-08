@@ -76,8 +76,8 @@ if (typeof user !== 'object') {
                     chat.antiLink = false
                 if (!('viewonce' in chat))
                     chat.viewonce = false
-                if (!('onlyLatinos' in chat))
-                    chat.onlyLatinos = false
+                if (!('onlyAdmin' in chat))
+                    chat.onlyAdmin = false
                  if (!('nsfw' in chat))
                      chat.nsfw = false
                  if (!('antiLag' in chat))
@@ -101,7 +101,7 @@ if (typeof user !== 'object') {
                     antiLink: false,
                     viewonce: false,
                     useDocument: true,
-                    onlyLatinos: false,
+                    onlyAdmin: false,
                     nsfw: false, 
                     expired: 0,
                 }
@@ -132,8 +132,20 @@ let isActive = global.db.data.settings[this.user.jid].actives.includes(m.sender)
        if (!m.fromMe && !isActive)
            return
            */
-const mainBot = global.conn.user.jid
 const chat = global.db.data.chats[m.chat] || {}
+const gpmt = (m.isGroup ? ((conn.chats[m.chat] || {}).metadata || await this.groupMetadata(m.chat).catch(_ => null)) : {}) || {}
+const parts = (m.isGroup ? gpmt.participants : []) || []
+const cle = jid => jid?.split(':')[0] || ''
+const normm = jid => jid.replace(/[^0-9]/g, '')
+const sender = normm(m.sender)
+const usr = parts?.find(u => normm(u.id) === sender)
+const isRA = usr?.admin === 'superadmin'
+const isA = isRA || usr?.admin === 'admin'
+        
+   if (!m.isGroup && chat.onlyAdmin && !isA) 
+           return
+        
+const mainBot = global.conn.user.jid
 const isSubbs = chat.antiLag === true
 const allowedBots = chat.per || []
 if (!allowedBots.includes(mainBot)) allowedBots.push(mainBot)
@@ -155,12 +167,10 @@ const isAllowed = allowedBots.includes(this.user.jid)
         if (typeof m.text !== 'string')
             m.text = ''
 
-        //const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const sendNum = m.sender.replace(/[^0-9]/g, '')
-const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)]
+        const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)]
   .map(v => v.replace(/[^0-9]/g, ''))
   .includes(sendNum)
-
         const isOwner = isROwner      
         const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isPrems = isROwner || global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
@@ -258,7 +268,6 @@ const isBotAdmin = !!bot?.admin
             }
             if (typeof plugin !== 'function')
                 continue
-      // if ((usedPrefix = (match[0] || '')[0])) {
         if ((usedPrefix = (match && match[0]) || (global.db.data.settings[this.user.jid].noprefix && ''))) {
                 let noPrefix = m.text.replace(usedPrefix, '')
                 let [command, ...args] = noPrefix.trim().split` `.filter(v => v)
