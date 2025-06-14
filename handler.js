@@ -145,8 +145,24 @@ const usr = m.isGroup ? parts.find(u => normm(u.id) === sender) : {}
 const isRA = usr?.admin === 'superadmin'
 const isA = isRA || usr?.admin === 'admin'
 
-if (m.isGroup && chat.onlyAdmin && !isA && !(chat.antiLink || chat.antiLinkAll))
+const msgHasLink = /(https?:\/\/[^\s]+)/i.test(m.text || '')
+if (
+  m.isGroup &&
+  chat.onlyAdmin &&
+  !isA &&
+  !(chat.antiLink || chat.antiLinkAll)
+) {
   return
+}
+if (
+  m.isGroup &&
+  chat.onlyAdmin &&
+  !isA &&
+  (chat.antiLink || chat.antiLinkAll) && 
+  !msgHasLink 
+) {
+  return
+}
         
 const mainBot = global.conn.user.jid
 const isSubbs = chat.antiLag === true
