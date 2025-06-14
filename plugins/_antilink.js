@@ -1,39 +1,51 @@
-const groupLinkRegex = /chat.whatsapp.com\/(?:invite\/)?([0-9A-Za-z]{20,24})/i;
-const channelLinkRegex = /whatsapp.com\/channel\/([0-9A-Za-z]+)/i;
+const groupLinkRegex = /chat\.whatsapp\.com\/(?:invite\/)?([0-9A-Za-z]{20,24})/i;
+const channelLinkRegex = /whatsapp\.com\/channel\/([0-9A-Za-z]+)/i;
 
 export async function before(m, { conn, isAdmin, isBotAdmin }) {
-    if (!m || !m.text) return;
-    if (m.isBaileys && m.fromMe) return !0;
-    if (!m.isGroup) return !1;
+  if (!m || !m.text) return;
+  if (m.isBaileys && m.fromMe) return !0;
+  if (!m.isGroup) return !1;
 
-    let chat = global.db?.data?.chats?.[m.chat];
-    if (!chat || !chat.antiLink) return !0;
-    let isGroupLink = m.text.match(groupLinkRegex);
-    let isChannelLink = m.text.match(channelLinkRegex);
+  const chat = global.db?.data?.chats?.[m.chat];
+  if (!chat || !chat.antiLink) return !0;
 
-    if ((isGroupLink || isChannelLink) && !isAdmin) {
-        if (isBotAdmin) {
-            try {
-                const linkThisGroup = `https://chat.whatsapp.com/${await conn.groupInviteCode(m.chat)}`;
-                if (isGroupLink && m.text.includes(linkThisGroup)) return !0;
-            } catch (error) {
-                console.error("[ERROR] No se pudo obtener el código del grupo:", error);
-            }
-        }
+  const isGroupLink = groupLinkRegex.test(m.text);
+  const isChannelLink = channelLinkRegex.test(m.text);
 
-        await conn.reply(m.chat, `*≡ Enlace Detectado*
-            
-No permitimos enlaces de ${isChannelLink ? 'canales' : 'otros grupos'}. Lo siento, *@${m.sender.split('@')[0]}*, serás expulsado. ${isBotAdmin ? '' : '\n\nNo soy admin así que no te puedo expulsar :v'}`, null, { mentions: [m.sender] });
+  if ((isGroupLink || isChannelLink) && !isAdmin) {
+    let isOwnGroupLink = false;
 
-        if (isBotAdmin) {
-            try {
-                await conn.sendMessage(m.chat, { delete: m.key });
-                await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove');
-                console.log(`[LOG] Usuario ${m.sender} eliminado del grupo ${m.chat}`);
-            } catch (error) {
-                console.error("[ERROR] No se pudo eliminar el mensaje o expulsar al usuario:", error);
-            }
-        }
+    if (isGroupLink && isBotAdmin) {
+      try {
+        const ownCode = await conn.groupInviteCode(m.chat);
+        isOwnGroupLink = m.text.includes(`chat.whatsapp.com/${ownCode}`);
+      } catch (e) {}
     }
-    return !0;
+
+    if (isOwnGroupLink) return !0;
+
+    if (isBotAdmin) {
+      try {
+        await conn.sendMessage(m.chat, { delete: m.key });
+      } catch (e) {}
+    }
+
+    if (!global.antifloodLinks) global.antifloodLinks = {};
+    const last = global.antifloodLinks[m.sender] || 0;
+    const now = Date.now();
+    if (now - last > 5000) {
+      global.antifloodLinks[m.sender] = now;
+      await conn.reply(m.chat, `*≡ Enlace Detectado*\n\nNo se permiten enlaces de ${isChannelLink ? 'canales' : 'otros grupos'}. Lo siento, *@${m.sender.split('@')[0]}*, serás expulsado.${isBotAdmin ? '' : '\n\n(No soy admin, así que no puedo expulsarte)'}`, null, {
+        mentions: [m.sender]
+      });
+    }
+
+    if (isBotAdmin) {
+      try {
+        await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove');
+      } catch (err) {}
+    }
+  }
+
+  return !0;
 }
